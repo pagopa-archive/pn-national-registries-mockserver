@@ -1705,60 +1705,75 @@
       "method": "POST",
       "path": "/extract/.*"
   },
-  "httpResponse": {
-      "statusCode": 400,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "status": "400",
-              "type": "Bad request",
-              "detail": "<detail_error>"
-          }
-      }
-  }
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"400\",
+    error: \"Bad Request\",
+    detail:\"<detail_error\",
+    }
+    }"
+}
 },
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/rest/spec/v1/richiestaElencoPec",
+      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
       "body": {
-          "type": "JSON",
-          "json": {
-              "dataOraRichiesta": "2022-10-21T10:05:59",
-              "elencoCf": [
-                  {
-                      "cf": "AAAAAA00Z00Z000Z"
-                  },
-                  {
-                      "cf": "ZZZZZZ00Z00Z000Z"
-                  },
-                  {
-                      "cf": "ZZZZZZ00Z00Z000Z"
-                  }
-              ]
-          },
-          "matchType": "STRICT"
-      }
+        "type": "JSON",
+        "json": {
+            "dataOraRichiesta": "2022-10-21T10:15:20",
+            "elencoCf": [
+                {
+                    "cf": "BBBBBB00Z00Z000Z"
+                },
+                {
+                    "cf": "ZZZZZZ00Z00Z000Z"
+                },
+                {
+                    "cf": "ZZZZZZ00Z00Z000Z"
+                }
+            ]
+        },
+        "matchType": "STRICT"
+    }
   },
-  "httpResponse": {
-      "statusCode": 200,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "dataOraEstrazione": "2022-10-21T10:05:59",
-              "identificativoRichiesta": "123456"
-          }
-      }
-  }
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 200, \"body\": {
+    dataOraEstrazione: \"$date.iso\",
+    identificativoRichiesta: \"123456\"
+    } }"
+}
 },
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/rest/spec/v1/richiestaElencoPec",
+      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string",
+                }
+            }
+        ]
+    },
       "body": {
           "type": "JSON",
           "json": {
-              "dataOraRichiesta": "2022-10-21T10:05:59",
+              "dataOraRichiesta": "2022-10-21T10:15:20",
               "elencoCf": [
                   {
                       "cf": "BBBBBB00Z00Z000Z"
@@ -1775,13 +1790,32 @@
       }
   },
   "httpResponse": {
-      "statusCode": 401
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+    }
   }
 },
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/rest/spec/v1/richiestaElencoPec",
+      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
       "body": {
           "type": "JSON",
           "json": {
@@ -1801,14 +1835,32 @@
           "matchType": "STRICT"
       }
   },
-  "httpResponse": {
-      "statusCode": 404
-  }
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 404, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"404\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
 },
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/rest/spec/v1/richiestaElencoPec",
+      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
       "body": {
           "type": "JSON",
           "json": {
@@ -1828,14 +1880,32 @@
           "matchType": "STRICT"
       }
   },
-  "httpResponse": {
-      "statusCode": 500
-  }
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 500, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"500\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
 },
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/rest/spec/v1/richiestaElencoPec",
+      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
       "body": {
           "type": "JSON",
           "json": {
@@ -1855,165 +1925,989 @@
           "matchType": "STRICT"
       }
   },
-  "httpResponse": {
-      "statusCode": 503
-  }
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 503, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"503\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
 },
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/rest/spec/v1/richiestaElencoPec",
+      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
       "body": {
           "type": "REGEX",
           "regex": ".*"
       }
   },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"400\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/111111",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 200, \"body\": {
+     dataOraDownload: \"$date.iso\",
+     identificativoRichiesta: \"111111\",
+     elencoPec: [
+               {
+                   cf: \"AAAAAA00Z00Z000Z\",
+                   pecImpresa: \"esempio@pec.it\",
+                   pecProfessionistas: [
+                       {
+                        pecProfessionista: \"esempio1@pec.it\"
+                       },
+                       {
+                        pecProfessionista: \"esempio2@pec.it\"
+                       }
+                   ]
+               }
+           ]
+    } }"
+}
+},
+{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/111111",
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
   "httpResponse": {
-      "statusCode": 400
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+    }
   }
 },
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/getElencoPec/111111"
+      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/333333",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 404, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"404\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/444444",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 500, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"500\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/5555555",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 503, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"503\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/AAADDD00R567LV",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"400\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/ic/ce/wspa/wspa/rest/sede/AAAAAA00Z00Z000Z",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 200, \"body\": {
+         dataOraEstrazione: \"$date.iso\",
+    	 cf:\"AAAAAA00Z00Z000Z\",
+    	 indirizzoLocalizzazione: {
+    	  comune:\"Roma\",
+    	  provincia:\"RM\",
+    	  toponimo:\"Roma\",
+    	  via:\"Via del Corso\",
+    	  nCivico:\"100\",
+    	  cap:\"00100\"
+    	 }
+     }
+    }"
+    }
+}, 
+{
+  "httpRequest": {
+      "method": "POST",
+      "path":"/ic/ce/wspa/wspa/rest/sede/AAAAAA00Z00Z000Z",
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
   },
   "httpResponse": {
-      "statusCode": 200,
+      "statusCode": 401,
       "body": {
-          "type": "JSON",
-          "json": {
-              "dataOraDownload": "2022-10-21T10:05:59",
-              "identificativoRichiesta": "111111",
-              "elencoPec": [
-                  {
-                      "cf": "AAAAAA00Z00Z000Z",
-                      "pecImpresa": "esempio@pec.it",
-                      "pecProfessionistas": [
-                          {
-                              "pecProfessionista": "esempio1@pec.it"
-                          },
-                          {
-                              "pecProfessionista": "esempio2@pec.it"
-                          }
-                      ]
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+    }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path":"/ic/ce/wspa/wspa/rest/sede/CCCCCC00Z00Z000Z",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 404, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"404\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path":"/ic/ce/wspa/wspa/rest/sede/DDDDDD00Z00Z000Z",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 500, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"500\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path":"/ic/ce/wspa/wspa/rest/sede/EEEEEE00Z00Z000Z",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 503, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"503\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path":"/ic/ce/wspa/wspa/rest/sede/.*",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"400\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+}, 
+{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/PPPLL07VND10PP",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+          "client_id": [{
+                  "schema": {
+                      "type": "string"
                   }
-              ]
-          }
+              }
+          ]
       }
-  }
-},
-{
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 200, \"body\": {
+    dataOraEstrazione: \"$date.iso\",
+    cfPersona:\"PPPLL07VND10PP\",
+    elencoImpreseRappresentate: [{
+    cfImpresa:\"AAAAAA00Z00Z000Z\",
+    denominazione:\"abd\"
+    },{
+    cfImpresa:\"AAAAAA00Z00Z000Z\",
+    denominazione:\"abd\"
+    }
+    ]
+    }
+    }"
+}
+}, {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/getElencoPec/222222"
+      "path": "/rest/spec/v1/legaleRappresentante/CCCCCC00Z00Z000Z",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+          "client_id": [{
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ]
+      }
   },
-  "httpResponse": {
-      "statusCode": 401
-  }
-},
-{
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"400\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+}, {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/getElencoPec/333333"
+      "path": "/rest/spec/v1/legaleRappresentante/PPPLL07VND10PP",
+      "queryStringParameters": {
+          "client_id": [{
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ]
+      }
   },
   "httpResponse": {
-      "statusCode": 404
-  }
-},
-{
-  "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/getElencoPec/444444"
-  },
-  "httpResponse": {
-      "statusCode": 500
-  }
-},
-{
-  "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/getElencoPec/555555"
-  },
-  "httpResponse": {
-      "statusCode": 503
-  }
-},
-{
-  "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/getElencoPec/.*"
-  },
-  "httpResponse": {
-      "statusCode": 400
-  }
-},
-{
-  "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/sede/AAAAAA00Z00Z000Z"
-  },
-  "httpResponse": {
-      "statusCode": 200,
+      "statusCode": 401,
       "body": {
           "type": "JSON",
           "json": {
-              "dataOraEstrazione": "2022-10-21T10:05:59",
-              "cf": "AAAAAA00Z00Z000Z",
-              "indirizzoLocalizzazione": {
-                  "comune": "Roma",
-                  "provincia": "RM",
-                  "toponimo": "Roma",
-                  "via": "Via del Corso",
-                  "nCivico": "100",
-                  "cap": "00100"
-              }
+              "httpCode": "401",
+              "httpMessage": "Unauthorized",
+              "moreInformation": "Invalid client id or secret."
           }
       }
   }
+}, {
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/DDDDD11Z11Z111Z",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+          "client_id": [{
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ]
+      }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 404, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"404\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+}, {
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/BBBBBB14M98L444P",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+          "client_id": [{
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ]
+      }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 500, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"500\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+}, {
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/VVVVVV88A34I000L",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+          "client_id": [{
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ]
+      }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 503, \"body\": {
+    timestamp: \"$date.iso\",
+    status: \"503\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
 },
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/sede/BBBBBB00Z00Z000Z"
+      "path": "/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+          "cfImpresa": [{
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ],
+          "client_id": [{
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ]
+      }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 200, \"body\":{
+        dataOraEstrazione: \"$!date.iso\",
+        cfPersona:\"LLL23ER56OPL7\",
+    cfImpresa:\"cdvfbg\",
+    esitoVerifica:\"diciamo ok?\"
+    }}"
+} 
+},{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7400",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "cfImpresa": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"400\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7",
+      "queryStringParameters": {
+        "cfImpresa": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
   },
   "httpResponse": {
-      "statusCode": 401
+      "statusCode": 401,
+      "body": {
+          "type": "JSON",
+          "json": {
+            "httpCode": "401",
+            "httpMessage": "Unauthorized",
+            "moreInformation": "Invalid client id or secret."
+          }
+      }
   }
+},{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/ASDERT07TY0PL",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "cfImpresa": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 404, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"404\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/LDA07VNAPQ24L",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "cfImpresa": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 500, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"500\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},{
+  "httpRequest": {
+      "method": "GET",
+      "path": "/rest/spec/v1/legaleRappresentante/ZAZANPL89MRDC71",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        },
+      "queryStringParameters": {
+        "cfImpresa": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ],
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 503, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"503\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+
+{
+  "httpRequest":{
+    "method": "GET",
+    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X",
+    "headers":{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    },
+    "queryStringParameters": {
+       "cfImpresa": [{
+          "schema" :{
+          "type":"string"
+          }
+        }],
+        "client_id":[{
+          "schema":{
+            "type":"string"
+          }
+        }]
+    }
+  },
+
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 200, \"body\":{         
+                  dataOraEstrazione: \"$!date.iso\",
+                  cfPersona:\"cdfvdc\",
+                  cfImpresa:\"cdvfbg\",
+                  esitoVerifica:\"diciamo ok?\"
+            }}"
+  } 
+},
+{
+  "httpRequest":{
+    "method": "GET",
+    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X400",
+    "headers":{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    },
+    "queryStringParameters": {
+       "cfImpresa": [{
+          "schema" :{
+          "type":"string"
+          }
+        }],
+        "client_id":[{
+          "schema":{
+            "type":"string"
+          }
+        }]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"400\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest":{
+    "method": "GET",
+    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X",
+
+    "queryStringParameters": {
+       "cfImpresa": [{
+          "schema" :{
+          "type":"string"
+          }
+        }],
+        "client_id":[{
+          "schema":{
+            "type":"string"
+          }
+        }]
+    }
+  },
+  "httpResponse": {
+    "statusCode": 401,
+    "body": {
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
+    }
+}
+},
+{
+  "httpRequest":{
+    "method": "GET",
+    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X404",
+    "headers":{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    },
+    "queryStringParameters": {
+       "cfImpresa": [{
+          "schema" :{
+          "type":"string"
+          }
+        }],
+        "client_id":[{
+          "schema":{
+            "type":"string"
+          }
+        }]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 404, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"404\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest":{
+    "method": "GET",
+    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X500",
+    "headers":{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    },
+    "queryStringParameters": {
+       "cfImpresa": [{
+          "schema" :{
+          "type":"string"
+          }
+        }],
+        "client_id":[{
+          "schema":{
+            "type":"string"
+          }
+        }]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 500, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"500\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
+},
+{
+  "httpRequest":{
+    "method": "GET",
+    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X503",
+    "headers":{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    },
+    "queryStringParameters": {
+       "cfImpresa": [{
+          "schema" :{
+          "type":"string"
+          }
+        }],
+        "client_id":[{
+          "schema":{
+            "type":"string"
+          }
+        }]
+    }
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 503, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"503\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
 },
 {
   "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/sede/CCCCCC00Z00Z000Z"
+      "method": "POST",
+      "path": "/ic/ce/wspa/wspa/rest/authentication",
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
+      "body": {
+        "string":"tokenino",
+        "matchType": "STRICT"
+    }
   },
   "httpResponse": {
-      "statusCode": 404
-  }
+    "statusCode": 200,
+    "body": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+    "headers":{"Content-Type":["text/plain;charset=UTF-8"]}
+}
+  },
+
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/ic/ce/wspa/wspa/rest/authentication",
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
+   
+  },
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 400, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"400\",
+    error: \"Bad Request\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
 },
 {
   "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/sede/DDDDDD00Z00Z000Z"
+      "method": "POST",
+      "path": "/ic/ce/wspa/wspa/rest/authentication503",
+      "queryStringParameters": {
+        "client_id": [{
+                "schema": {
+                    "type": "string"
+                }
+            }
+        ]
+    },
+   
   },
-  "httpResponse": {
-      "statusCode": 500
-  }
-},
-{
-  "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/sede/EEEEEE00Z00Z000Z"
-  },
-  "httpResponse": {
-      "statusCode": 503
-  }
-},
-{
-  "httpRequest": {
-      "method": "GET",
-      "path": "/rest/spec/v1/sede/.*"
-  },
-  "httpResponse": {
-      "statusCode": 400
-  }
+  "httpResponseTemplate": {
+    "templateType": "VELOCITY",
+    "template": "{ \"statusCode\": 503, \"body\": {
+    timestamp: \"$date.iso\",
+    status:\"503\",
+    error: \"Internal Server Error\",
+    path:\"/wspa/auth/token\",
+    }
+    }"
+}
 }
 ]
+
+//400 & 500
