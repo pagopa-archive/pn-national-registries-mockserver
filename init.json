@@ -1,8 +1,17 @@
 [
   {
     "httpRequest": {
+        "method": "GET",
+        "path": "/"
+    },
+    "httpResponse": {
+        "statusCode": 200
+    }
+  },
+  {
+    "httpRequest": {
         "method": "POST",
-        "path": "/anpr-service-e002",
+        "path": "/nationalregistriesmock/anpr-service-e002",
         "body": {
             "type": "JSON",
             "json": {
@@ -1096,7 +1105,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/anpr-service-e002",
+      "path": "/nationalregistriesmock/anpr-service-e002",
       "body": {
           "type": "JSON",
           "json": {
@@ -1134,7 +1143,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/anpr-service-e002",
+      "path": "/nationalregistriesmock/anpr-service-e002",
       "body": {
           "type": "JSON",
           "json": {
@@ -1172,7 +1181,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/anpr-service-e002",
+      "path": "/nationalregistriesmock/anpr-service-e002",
       "body": {
           "type": "JSON",
           "json": {
@@ -1210,7 +1219,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/anpr-service-e002",
+      "path": "/nationalregistriesmock/anpr-service-e002",
       "body": {
           "type": "JSON",
           "json": {
@@ -1248,7 +1257,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/anpr-service-e002",
+      "path": "/nationalregistriesmock/anpr-service-e002",
       "body": {
           "type": "JSON",
           "json": {
@@ -1286,7 +1295,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/anpr-service-e002",
+      "path": "/nationalregistriesmock/anpr-service-e002",
       "body": {
           "type": "REGEX",
           "regex": ".*"
@@ -1320,7 +1329,7 @@
 {
     "httpRequest": {
         "method": "POST",
-        "path": "/verifica",
+        "path": "/nationalregistriesmock/verifica",
         "body": {
             "type": "JSON",
             "json": {
@@ -1344,7 +1353,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1368,7 +1377,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1392,7 +1401,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1416,7 +1425,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1442,7 +1451,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1468,7 +1477,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1494,7 +1503,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1520,7 +1529,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "JSON",
           "json": {
@@ -1546,7 +1555,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/verifica",
+      "path": "/nationalregistriesmock/verifica",
       "body": {
           "type": "REGEX",
           "regex": ".*"
@@ -1569,7 +1578,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/extract/.*",
+      "path": "/nationalregistriesmock/extract/.*",
       "queryStringParameters": {
           "practicalReference": [
               "abc123"
@@ -1593,7 +1602,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/extract/.*",
+      "path": "/nationalregistriesmock/extract/.*",
       "queryStringParameters": {
           "practicalReference": [
               "def123"
@@ -1615,7 +1624,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/extract/.*",
+      "path": "/nationalregistriesmock/extract/.*",
       "queryStringParameters": {
           "practicalReference": [
               "ghi123"
@@ -1637,7 +1646,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/extract/.*",
+      "path": "/nationalregistriesmock/extract/.*",
       "queryStringParameters": {
           "practicalReference": [
               "jkl123"
@@ -1659,7 +1668,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/extract/.*",
+      "path": "/nationalregistriesmock/extract/.*",
       "queryStringParameters": {
           "practicalReference": [
               "mno123"
@@ -1681,7 +1690,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/extract/.*",
+      "path": "/nationalregistriesmock/extract/.*",
       "queryStringParameters": {
           "practicalReference": [
               "pqr123"
@@ -1703,7 +1712,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/extract/.*"
+      "path": "/nationalregistriesmock/extract/.*"
   },
   "httpResponseTemplate": {
     "templateType": "VELOCITY",
@@ -1719,7 +1728,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -1761,7 +1770,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "queryStringParameters": {
         "client_id": [{
                 "schema": {
@@ -1804,7 +1813,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -1849,7 +1858,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -1894,7 +1903,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -1939,7 +1948,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -1962,7 +1971,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/111111",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/111111",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2000,7 +2009,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/111111",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/111111",
       "queryStringParameters": {
         "client_id": [{
                 "schema": {
@@ -2025,7 +2034,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/333333",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/333333",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2052,7 +2061,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/444444",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/444444",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2079,7 +2088,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/5555555",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/5555555",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2106,7 +2115,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/ic/ce/wspa/wspa/rest/getElencoPec/AAADDD00R567LV",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAADDD00R567LV",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2133,7 +2142,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/sede/AAAAAA00Z00Z000Z",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/AAAAAA00Z00Z000Z",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2300,7 +2309,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/PPPLL07VND10PP",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/PPPLL07VND10PP",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2332,7 +2341,7 @@
 }, {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/CCCCCC00Z00Z000Z",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/CCCCCC00Z00Z000Z",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2358,7 +2367,7 @@
 }, {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/PPPLL07VND10PP",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/PPPLL07VND10PP",
       "queryStringParameters": {
           "client_id": [{
                   "schema": {
@@ -2382,7 +2391,7 @@
 }, {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/DDDDD11Z11Z111Z",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/DDDDD11Z11Z111Z",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2408,7 +2417,7 @@
 }, {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/BBBBBB14M98L444P",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/BBBBBB14M98L444P",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2434,7 +2443,7 @@
 }, {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/VVVVVV88A34I000L",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/VVVVVV88A34I000L",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2461,7 +2470,7 @@
 {
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2492,7 +2501,7 @@
 },{
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7400",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7400",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2524,7 +2533,7 @@
 },{
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/LLL23ER56OPL7",
       "queryStringParameters": {
         "cfImpresa": [{
                 "schema": {
@@ -2554,7 +2563,7 @@
 },{
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/ASDERT07TY0PL",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/ASDERT07TY0PL",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2586,7 +2595,7 @@
 },{
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/LDA07VNAPQ24L",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/LDA07VNAPQ24L",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2618,7 +2627,7 @@
 },{
   "httpRequest": {
       "method": "GET",
-      "path": "/rest/spec/v1/legaleRappresentante/ZAZANPL89MRDC71",
+      "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/ZAZANPL89MRDC71",
       "headers":{
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
         },
@@ -2652,7 +2661,7 @@
 {
   "httpRequest":{
     "method": "GET",
-    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X",
+    "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X",
     "headers":{
     "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
     },
@@ -2683,7 +2692,7 @@
 {
   "httpRequest":{
     "method": "GET",
-    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X400",
+    "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X400",
     "headers":{
     "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
     },
@@ -2714,7 +2723,7 @@
 {
   "httpRequest":{
     "method": "GET",
-    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X",
+    "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X",
 
     "queryStringParameters": {
        "cfImpresa": [{
@@ -2744,7 +2753,7 @@
 {
   "httpRequest":{
     "method": "GET",
-    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X404",
+    "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X404",
     "headers":{
     "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
     },
@@ -2775,7 +2784,7 @@
 {
   "httpRequest":{
     "method": "GET",
-    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X500",
+    "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X500",
     "headers":{
     "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
     },
@@ -2806,7 +2815,7 @@
 {
   "httpRequest":{
     "method": "GET",
-    "path": "/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X503",
+    "path": "/nationalregistriesmock/rest/spec/v1/legaleRappresentante/DCNMTT93R11H501X503",
     "headers":{
     "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
     },
@@ -2837,7 +2846,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/authentication",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/authentication",
       "queryStringParameters": {
         "client_id": [{
                 "schema": {
@@ -2861,7 +2870,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/authentication",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/authentication",
       "queryStringParameters": {
         "client_id": [{
                 "schema": {
@@ -2886,7 +2895,7 @@
 {
   "httpRequest": {
       "method": "POST",
-      "path": "/ic/ce/wspa/wspa/rest/authentication503",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/authentication503",
       "queryStringParameters": {
         "client_id": [{
                 "schema": {
