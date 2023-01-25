@@ -1,248 +1,1030 @@
 [
   {
     "httpRequest": {
-        "method": "GET",
-        "path": "/"
+      "method": "GET",
+      "path": "/"
     },
     "httpResponse": {
-        "statusCode": 200
+      "statusCode": 200
     }
   },
   {
     "httpRequest": {
-        "method": "POST",
-        "path": "/nationalregistriesmock/anpr-service-e002",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "criteriRicerca": {
-                    "codiceFiscale": "AAAAAA22C61Z614M"
-                }
-            }
+      "method": "POST",
+      "path": "/nationalregistriesmock/anpr-service-e002",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "criteriRicerca": {
+            "codiceFiscale": "AAAAAA22C61Z614M"
+          }
         }
+      }
     },
     "httpResponse": {
-        "statusCode": 200,
-        "body": {
-            "type": "JSON",
-            "json": {
-    "testataRisposta": {
-      "idOperazioneClient": "3890887656773700",
-      "codMittente": "600010",
-      "codDestinatario": "ANPR02",
-      "operazioneRichiesta": "E002",
-      "dataOraRichiesta": "2022-10-21T10: 05: 59",
-      "protocolloClient": "03",
-      "dataProtocolloClient": "2021-11-15",
-      "idOperazioneANPR": "54472718",
-      "esitoOperazione": "0000"
-    },
-    "listaSoggetti": {
-      "datiSoggetto": [
-        {
-          "generalita": {
-            "codiceFiscale": {
-              "codFiscale": "DSSSRL22C61Z614M",
-              "validitaCF": "1",
-              "dataAttribuzioneValidita": "2022-03-22"
-            },
-            "cognome": "DE SASS0",
-            "senzaCognome": "NO",
-            "nome": "ESTRELLA",
-            "senzaNome": "0",
-            "sesso": "F",
-            "dataNascita": "2022-03-22",
-            "senzaGiorno": "0",
-            "senzaGiornoMese": "0",
-            "luogoNascita": {
-              "luogoEccezionale": "0",
-              "comune": {
-                "nomeComune": "ROMA",
-                "codiceIstat": "0123",
-                "siglaProvinciaIstat": "RM",
-                "descrizioneLocalita": "ROMA"
-              },
-              "localita": {
-                "descrizioneLocalita": "ROMA",
-                "descrizioneStato": "ITALIA",
-                "codiceStato": "IT",
-                "provinciaContea": "RM"
+      "statusCode": 200,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "testataRisposta": {
+            "idOperazioneClient": "3890887656773700",
+            "codMittente": "600010",
+            "codDestinatario": "ANPR02",
+            "operazioneRichiesta": "E002",
+            "dataOraRichiesta": "2022-10-21T10: 05: 59",
+            "protocolloClient": "03",
+            "dataProtocolloClient": "2021-11-15",
+            "idOperazioneANPR": "54472718",
+            "esitoOperazione": "0000"
+          },
+          "listaSoggetti": {
+            "datiSoggetto": [
+              {
+                "generalita": {
+                  "codiceFiscale": {
+                    "codFiscale": "AAAAAA22C61Z614M",
+                    "validitaCF": "1",
+                    "dataAttribuzioneValidita": "2022-03-22"
+                  },
+                  "cognome": "DE SASS0",
+                  "senzaCognome": "NO",
+                  "nome": "ESTRELLA",
+                  "senzaNome": "0",
+                  "sesso": "F",
+                  "dataNascita": "2022-03-22",
+                  "senzaGiorno": "0",
+                  "senzaGiornoMese": "0",
+                  "luogoNascita": {
+                    "luogoEccezionale": "0",
+                    "comune": {
+                      "nomeComune": "ROMA",
+                      "codiceIstat": "0123",
+                      "siglaProvinciaIstat": "RM",
+                      "descrizioneLocalita": "ROMA"
+                    },
+                    "localita": {
+                      "descrizioneLocalita": "ROMA",
+                      "descrizioneStato": "ITALIA",
+                      "codiceStato": "IT",
+                      "provinciaContea": "RM"
+                    }
+                  },
+                  "soggettoAIRE": "string",
+                  "annoEspatrio": "2022",
+                  "idSchedaSoggettoComune": {
+                    "idSchedaSoggettoComuneIstat": "0231",
+                    "idSchedaSoggetto": "23423"
+                  },
+                  "idSchedaSoggettoANPR": "24525",
+                  "note": "0"
+                },
+                "statoCivile": {
+                  "statoCivile": "NUBILE",
+                  "noteStatoCivile": "0",
+                  "statoCivileND": "NB"
+                },
+                "attributiSoggetto": {
+                  "senzaFissaDimora": "0",
+                  "soggettoCertificabile": "1"
+                },
+                "attoNascita": {
+                  "comuneRegistrazione": {
+                    "nomeComune": "RM",
+                    "codiceIstat": "2413",
+                    "siglaProvinciaIstat": "RM",
+                    "descrizioneLocalita": "ROMA"
+                  },
+                  "ufficioMunicipio": "5",
+                  "anno": "2022",
+                  "parte": "4",
+                  "serie": "23",
+                  "numeroAtto": "2524123",
+                  "volume": "241",
+                  "dataFormazioneAtto": "2022-03-22",
+                  "trascritto": "0"
+                },
+                "cittadinanza": [
+                  {
+                    "descrizioneStato": "ITALIA",
+                    "codiceStato": "IT",
+                    "noteStato": "0",
+                    "dataValidita": "2021-11-15"
+                  }
+                ],
+                "paternita": {
+                  "generalita": {
+                    "codiceFiscale": {
+                      "codFiscale": "AAAAAA22C61Z614M",
+                      "validitaCF": "1",
+                      "dataAttribuzioneValidita": "2021-11-15"
+                    },
+                    "cognome": "DE SASSO",
+                    "senzaCognome": "0",
+                    "nome": "ESTRELLA",
+                    "senzaNome": "0",
+                    "sesso": "F",
+                    "dataNascita": "2022-03-22",
+                    "senzaGiorno": "0",
+                    "senzaGiornoMese": "0",
+                    "luogoNascita": {
+                      "luogoEccezionale": "0",
+                      "comune": {
+                        "nomeComune": "ROMA",
+                        "codiceIstat": "2413",
+                        "siglaProvinciaIstat": "RM",
+                        "descrizioneLocalita": "ROMA"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "ROMA",
+                        "descrizioneStato": "ITALIA",
+                        "codiceStato": "3924",
+                        "provinciaContea": "ROMA"
+                      }
+                    },
+                    "soggettoAIRE": "0",
+                    "annoEspatrio": "2022",
+                    "idSchedaSoggettoComune": {
+                      "idSchedaSoggettoComuneIstat": "41131",
+                      "idSchedaSoggetto": "2452"
+                    },
+                    "idSchedaSoggettoANPR": "1341",
+                    "note": "0"
+                  },
+                  "statoCivile": {
+                    "statoCivile": "NUBILE",
+                    "noteStatoCivile": "0",
+                    "statoCivileND": "NB"
+                  },
+                  "cittadinanza": {
+                    "descrizioneStato": "ITALIA",
+                    "codiceStato": "IT",
+                    "noteStato": "0",
+                    "dataValidita": "2021-11-15"
+                  },
+                  "altriDati": {
+                    "posizioneProfessionale": "DISOCCUPATO",
+                    "condizioneNonProfessionale": "0",
+                    "titoloStudio": "0"
+                  }
+                },
+                "maternita": {
+                  "generalita": {
+                    "codiceFiscale": {
+                      "codFiscale": "AAAAAA22C61Z614M",
+                      "validitaCF": "1",
+                      "dataAttribuzioneValidita": "2021-11-15"
+                    },
+                    "cognome": "DE SASS0",
+                    "senzaCognome": "0",
+                    "nome": "GIOVANNA",
+                    "senzaNome": "0",
+                    "sesso": "F",
+                    "dataNascita": "2021-11-15",
+                    "senzaGiorno": "0",
+                    "senzaGiornoMese": "0",
+                    "luogoNascita": {
+                      "luogoEccezionale": "0",
+                      "comune": {
+                        "nomeComune": "ROMA",
+                        "codiceIstat": "RM",
+                        "siglaProvinciaIstat": "RM",
+                        "descrizioneLocalita": "RM"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "RM",
+                        "descrizioneStato": "it",
+                        "codiceStato": "it",
+                        "provinciaContea": "RM"
+                      }
+                    },
+                    "soggettoAIRE": "0",
+                    "annoEspatrio": "2022",
+                    "idSchedaSoggettoComune": {
+                      "idSchedaSoggettoComuneIstat": "RM",
+                      "idSchedaSoggetto": "24123"
+                    },
+                    "idSchedaSoggettoANPR": "24123",
+                    "note": "0"
+                  },
+                  "statoCivile": {
+                    "statoCivile": "NUBILE",
+                    "noteStatoCivile": "NB",
+                    "statoCivileND": "24123"
+                  },
+                  "cittadinanza": {
+                    "descrizioneStato": "IT",
+                    "codiceStato": "IT",
+                    "noteStato": "0",
+                    "dataValidita": "2021-11-15"
+                  },
+                  "altriDati": {
+                    "posizioneProfessionale": "DISOCCUPATO",
+                    "condizioneNonProfessionale": "0",
+                    "titoloStudio": "0"
+                  }
+                },
+                "residenza": [
+                  {
+                    "tipoIndirizzo": "RESIDENZA",
+                    "noteIndirizzo": "0",
+                    "indirizzo": {
+                      "cap": "00144",
+                      "comune": {
+                        "nomeComune": "RM",
+                        "codiceIstat": "IT",
+                        "siglaProvinciaIstat": "RM",
+                        "descrizioneLocalita": "0"
+                      },
+                      "frazione": "24123",
+                      "toponimo": {
+                        "codSpecie": "24123",
+                        "specie": "24123",
+                        "specieFonte": "24123",
+                        "codToponimo": "24123",
+                        "denominazioneToponimo": "24123",
+                        "toponimoFonte": "24123"
+                      },
+                      "numeroCivico": {
+                        "codiceCivico": "24123",
+                        "civicoFonte": "24123",
+                        "numero": "24123",
+                        "metrico": "24123",
+                        "progSNC": "24123",
+                        "lettera": "24123",
+                        "esponente1": "24123",
+                        "colore": "24123",
+                        "civicoInterno": {
+                          "corte": "24123",
+                          "scala": "24123",
+                          "interno1": "24123",
+                          "espInterno1": "24123",
+                          "interno2": "24123",
+                          "espInterno2": "24123",
+                          "scalaEsterna": "24123",
+                          "secondario": "24123",
+                          "piano": "24123",
+                          "nui": "24123",
+                          "isolato": "24123"
+                        }
+                      }
+                    },
+                    "localitaEstera": {
+                      "indirizzoEstero": {
+                        "cap": "24123",
+                        "localita": {
+                          "descrizioneLocalita": "24123",
+                          "descrizioneStato": "24123",
+                          "codiceStato": "24123",
+                          "provinciaContea": "24123"
+                        },
+                        "toponimo": {
+                          "denominazione": "24123",
+                          "numeroCivico": "24123"
+                        }
+                      },
+                      "consolato": {
+                        "codiceConsolato": "24123",
+                        "descrizioneConsolato": "24123"
+                      }
+                    },
+                    "presso": "RM",
+                    "dataDecorrenzaResidenza": "2021-11-15"
+                  }
+                ],
+                "altraLingua": [
+                  {
+                    "idLingua": "24123",
+                    "noteIndirizzo": "0",
+                    "descrizioneLocalita": "RM",
+                    "frazione": "24123",
+                    "specie": "24123",
+                    "denominazioneToponimo": "24123",
+                    "presso": "24123"
+                  }
+                ],
+                "datiTraslitterati": {
+                  "cognomeTranslitterato": "DE SASS0",
+                  "nomeTranslitterato": "ESTRELLA",
+                  "specieTranslitterata": "24123",
+                  "denominazioneToponimoTranslitterato": "24123",
+                  "descrizioneLocalitaTranslitterata": "24123",
+                  "denominazioneComuneTranslitterato": "24123",
+                  "descrizioneStatoResidenzaTranslitterato": "24123",
+                  "denominazioneLocEsteraTranslitterata": "24123",
+                  "descrizioneConsolatoTranslitterato": "24123",
+                  "descrizioneStatoNascitaTranslitterato": "24123",
+                  "descrizioneStatoCittadinanzaTranslitterato": "24123"
+                },
+                "tutoreIntestatario": {
+                  "generalita": {
+                    "codiceFiscale": {
+                      "codFiscale": "AAAAAA22C61Z614M",
+                      "validitaCF": "1",
+                      "dataAttribuzioneValidita": "2021-11-15"
+                    },
+                    "cognome": "DE SASS0",
+                    "senzaCognome": "0",
+                    "nome": "ESTRELLA",
+                    "senzaNome": "0",
+                    "sesso": "F",
+                    "dataNascita": "2021-11-15",
+                    "senzaGiorno": "0",
+                    "senzaGiornoMese": "0",
+                    "luogoNascita": {
+                      "luogoEccezionale": "0",
+                      "comune": {
+                        "nomeComune": "RM",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "IT",
+                        "descrizioneLocalita": "RM"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "RM",
+                        "descrizioneStato": "IT",
+                        "codiceStato": "24123",
+                        "provinciaContea": "RM"
+                      }
+                    },
+                    "soggettoAIRE": "0",
+                    "annoEspatrio": "2022",
+                    "idSchedaSoggettoComune": {
+                      "idSchedaSoggettoComuneIstat": "24123",
+                      "idSchedaSoggetto": "24123"
+                    },
+                    "idSchedaSoggettoANPR": "24123",
+                    "note": "0"
+                  },
+                  "comuneResidenza": {
+                    "nomeComune": "RM",
+                    "codiceIstat": "IT",
+                    "siglaProvinciaIstat": "RM",
+                    "descrizioneLocalita": "RM"
+                  },
+                  "dataIntestarioConvivenza": "2021-11-15"
+                },
+                "matrimonio": {
+                  "coniuge": {
+                    "codiceFiscale": {
+                      "codFiscale": "AAAAAA22C61Z614M",
+                      "validitaCF": "1",
+                      "dataAttribuzioneValidita": "2021-11-15"
+                    },
+                    "cognome": "DE SASS0",
+                    "senzaCognome": "0",
+                    "nome": "ESTRELLA",
+                    "senzaNome": "0",
+                    "sesso": "F",
+                    "dataNascita": "2021-11-15",
+                    "senzaGiorno": "0",
+                    "senzaGiornoMese": "0",
+                    "luogoNascita": {
+                      "luogoEccezionale": "0",
+                      "comune": {
+                        "nomeComune": "RM",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "IT",
+                        "descrizioneLocalita": "RM"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "RM",
+                        "descrizioneStato": "IT",
+                        "codiceStato": "IT",
+                        "provinciaContea": "RM"
+                      }
+                    },
+                    "soggettoAIRE": "0",
+                    "annoEspatrio": "2022",
+                    "idSchedaSoggettoComune": {
+                      "idSchedaSoggettoComuneIstat": "24123",
+                      "idSchedaSoggetto": "24123"
+                    },
+                    "idSchedaSoggettoANPR": "24123",
+                    "note": "0"
+                  },
+                  "cittadinanza": {
+                    "descrizioneStato": "24123",
+                    "codiceStato": "24123",
+                    "noteStato": "24123",
+                    "dataValidita": "2021-11-15"
+                  },
+                  "datiMatrimonio": {
+                    "dataEvento": "2021-11-15",
+                    "senzaGiorno": "0",
+                    "senzaGiornoMese": "0",
+                    "luogoEvento": {
+                      "luogoEccezionale": "0",
+                      "comune": {
+                        "nomeComune": "RM",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "IT",
+                        "descrizioneLocalita": "RM"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "0",
+                        "descrizioneStato": "0",
+                        "codiceStato": "24123",
+                        "provinciaContea": "RM"
+                      }
+                    },
+                    "attoEvento": {
+                      "comuneRegistrazione": {
+                        "nomeComune": "RM",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "RM",
+                        "descrizioneLocalita": "0"
+                      },
+                      "ufficioMunicipio": "24123",
+                      "anno": "24123",
+                      "parte": "24123",
+                      "serie": "24123",
+                      "numeroAtto": "24123",
+                      "volume": "24123",
+                      "dataFormazioneAtto": "2021-11-15",
+                      "trascritto": "24123"
+                    }
+                  },
+                  "ordineMatrimonio": "24123"
+                },
+                "vedovanza": {
+                  "datiMorteconiuge": {
+                    "dataEvento": "2021-11-15",
+                    "senzaGiorno": "24123",
+                    "senzaGiornoMese": "24123",
+                    "luogoEvento": {
+                      "luogoEccezionale": "24123",
+                      "comune": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "24123",
+                        "descrizioneStato": "24123",
+                        "codiceStato": "24123",
+                        "provinciaContea": "24123"
+                      }
+                    },
+                    "attoEvento": {
+                      "comuneRegistrazione": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "ufficioMunicipio": "24123",
+                      "anno": "24123",
+                      "parte": "24123",
+                      "serie": "24123",
+                      "numeroAtto": "24123",
+                      "volume": "24123",
+                      "dataFormazioneAtto": "2021-11-15",
+                      "trascritto": "24123"
+                    }
+                  },
+                  "ordineMatrimonioPrecedente": "24123"
+                },
+                "annullamentoMatrimonio": {
+                  "tipoCessazione": "24123",
+                  "sentenza": {
+                    "data": "2021-11-15",
+                    "numero": "24123",
+                    "tipoTribunale": "24123",
+                    "autorita": "24123",
+                    "dataValidita": "2021-11-15"
+                  },
+                  "attoAnnullamentoMatrimonio": {
+                    "comuneRegistrazione": {
+                      "nomeComune": "24123",
+                      "codiceIstat": "24123",
+                      "siglaProvinciaIstat": "24123",
+                      "descrizioneLocalita": "24123"
+                    },
+                    "ufficioMunicipio": "24123",
+                    "anno": "24123",
+                    "parte": "24123",
+                    "serie": "24123",
+                    "numeroAtto": "24123",
+                    "volume": "24123",
+                    "dataFormazioneAtto": "2021-11-15",
+                    "trascritto": "24123"
+                  }
+                },
+                "convivenzaDiFatto": {
+                  "convivente": {
+                    "codiceFiscale": {
+                      "codFiscale": "24123",
+                      "validitaCF": "24123",
+                      "dataAttribuzioneValidita": "2021-11-15"
+                    },
+                    "cognome": "24123",
+                    "senzaCognome": "24123",
+                    "nome": "24123",
+                    "senzaNome": "24123",
+                    "sesso": "24123",
+                    "dataNascita": "2021-11-15",
+                    "senzaGiorno": "24123",
+                    "senzaGiornoMese": "24123",
+                    "luogoNascita": {
+                      "luogoEccezionale": "24123",
+                      "comune": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "24123",
+                        "descrizioneStato": "24123",
+                        "codiceStato": "24123",
+                        "provinciaContea": "24123"
+                      }
+                    },
+                    "soggettoAIRE": "24123",
+                    "annoEspatrio": "24123",
+                    "idSchedaSoggettoComune": {
+                      "idSchedaSoggettoComuneIstat": "24123",
+                      "idSchedaSoggetto": "24123"
+                    },
+                    "idSchedaSoggettoANPR": "24123",
+                    "note": "24123"
+                  },
+                  "cittadinanza": {
+                    "descrizioneStato": "24123",
+                    "codiceStato": "24123",
+                    "noteStato": "24123",
+                    "dataValidita": "2021-11-15"
+                  },
+                  "contrattoStipula": {
+                    "data": "2021-11-15",
+                    "dataNotifica": "2021-11-15",
+                    "dataDocumento": "2021-11-15",
+                    "protocollo": "24123",
+                    "documento": "24123",
+                    "estensione": "24123",
+                    "luogoEvento": {
+                      "luogoEccezionale": "24123",
+                      "comune": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "24123",
+                        "descrizioneStato": "24123",
+                        "codiceStato": "24123",
+                        "provinciaContea": "24123"
+                      }
+                    },
+                    "professionista": "24123",
+                    "comuneRegistrazione": {
+                      "nomeComune": "24123",
+                      "codiceIstat": "24123",
+                      "siglaProvinciaIstat": "24123",
+                      "descrizioneLocalita": "24123"
+                    },
+                    "stato": "24123"
+                  },
+                  "contrattoRisoluzione": {
+                    "motivoRisoluzione": 0,
+                    "contratto": {
+                      "data": "2021-11-15",
+                      "dataNotifica": "2021-11-15",
+                      "dataDocumento": "2021-11-15",
+                      "protocollo": "24123",
+                      "documento": "24123",
+                      "estensione": "24123",
+                      "luogoEvento": {
+                        "luogoEccezionale": "24123",
+                        "comune": {
+                          "nomeComune": "24123",
+                          "codiceIstat": "24123",
+                          "siglaProvinciaIstat": "24123",
+                          "descrizioneLocalita": "24123"
+                        },
+                        "localita": {
+                          "descrizioneLocalita": "24123",
+                          "descrizioneStato": "24123",
+                          "codiceStato": "24123",
+                          "provinciaContea": "24123"
+                        }
+                      },
+                      "professionista": "24123",
+                      "comuneRegistrazione": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "stato": "24123"
+                    }
+                  },
+                  "ordineConvivenza": "24123"
+                },
+                "unioneCivile": {
+                  "unitoCivilmente": {
+                    "codiceFiscale": {
+                      "codFiscale": "24123",
+                      "validitaCF": "24123",
+                      "dataAttribuzioneValidita": "2021-11-15"
+                    },
+                    "cognome": "24123",
+                    "senzaCognome": "24123",
+                    "nome": "24123",
+                    "senzaNome": "24123",
+                    "sesso": "24123",
+                    "dataNascita": "2021-11-15",
+                    "senzaGiorno": "24123",
+                    "senzaGiornoMese": "24123",
+                    "luogoNascita": {
+                      "luogoEccezionale": "24123",
+                      "comune": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "24123",
+                        "descrizioneStato": "24123",
+                        "codiceStato": "24123",
+                        "provinciaContea": "24123"
+                      }
+                    },
+                    "soggettoAIRE": "24123",
+                    "annoEspatrio": "24123",
+                    "idSchedaSoggettoComune": {
+                      "idSchedaSoggettoComuneIstat": "24123",
+                      "idSchedaSoggetto": "24123"
+                    },
+                    "idSchedaSoggettoANPR": "24123",
+                    "note": "24123"
+                  },
+                  "attoUnione": {
+                    "dataEvento": "2021-11-15",
+                    "senzaGiorno": "24123",
+                    "senzaGiornoMese": "24123",
+                    "luogoEvento": {
+                      "luogoEccezionale": "24123",
+                      "comune": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "localita": {
+                        "descrizioneLocalita": "24123",
+                        "descrizioneStato": "24123",
+                        "codiceStato": "24123",
+                        "provinciaContea": "24123"
+                      }
+                    },
+                    "attoEvento": {
+                      "comuneRegistrazione": {
+                        "nomeComune": "24123",
+                        "codiceIstat": "24123",
+                        "siglaProvinciaIstat": "24123",
+                        "descrizioneLocalita": "24123"
+                      },
+                      "ufficioMunicipio": "24123",
+                      "anno": "24123",
+                      "parte": "24123",
+                      "serie": "24123",
+                      "numeroAtto": "24123",
+                      "volume": "24123",
+                      "dataFormazioneAtto": "2021-11-15",
+                      "trascritto": "24123"
+                    }
+                  },
+                  "scioglimentoUnione": {
+                    "motivoScioglimento": "24123",
+                    "sentenza": {
+                      "data": "2021-11-15",
+                      "numero": "24123",
+                      "tipoTribunale": "24123",
+                      "autorita": "24123",
+                      "dataValidita": "2021-11-15"
+                    },
+                    "datiEvento": {
+                      "dataEvento": "2021-11-15",
+                      "senzaGiorno": "24123",
+                      "senzaGiornoMese": "24123",
+                      "luogoEvento": {
+                        "luogoEccezionale": "24123",
+                        "comune": {
+                          "nomeComune": "24123",
+                          "codiceIstat": "24123",
+                          "siglaProvinciaIstat": "24123",
+                          "descrizioneLocalita": "24123"
+                        },
+                        "localita": {
+                          "descrizioneLocalita": "24123",
+                          "descrizioneStato": "24123",
+                          "codiceStato": "24123",
+                          "provinciaContea": "24123"
+                        }
+                      },
+                      "attoEvento": {
+                        "comuneRegistrazione": {
+                          "nomeComune": "24123",
+                          "codiceIstat": "24123",
+                          "siglaProvinciaIstat": "24123",
+                          "descrizioneLocalita": "24123"
+                        },
+                        "ufficioMunicipio": "24123",
+                        "anno": "24123",
+                        "parte": "24123",
+                        "serie": "24123",
+                        "numeroAtto": "24123",
+                        "volume": "24123",
+                        "dataFormazioneAtto": "2021-11-15",
+                        "trascritto": "24123"
+                      }
+                    }
+                  },
+                  "cittadinanza": {
+                    "descrizioneStato": "24123",
+                    "codiceStato": "24123",
+                    "noteStato": "24123",
+                    "dataValidita": "2021-11-15"
+                  },
+                  "ordineUnione": "24123"
+                },
+                "cartaIdentita": {
+                  "numero": "24123",
+                  "dataRilascio": "2021-11-15",
+                  "cartaceaElettronica": "24123",
+                  "interdizioneEspatrio": "24123",
+                  "comuneRilascio": {
+                    "nomeComune": "24123",
+                    "codiceIstat": "24123",
+                    "siglaProvinciaIstat": "24123",
+                    "descrizioneLocalita": "24123"
+                  },
+                  "consolatoRilascio": {
+                    "codiceConsolato": "24123",
+                    "descrizioneConsolato": "24123"
+                  },
+                  "dataScadenza": "2021-11-15",
+                  "dataAnnullamento": "2021-11-15"
+                },
+                "permessoSoggiorno": {
+                  "numeroSoggiorno": "24123",
+                  "tipoSoggiorno": "24123",
+                  "noteSoggiorno": "24123",
+                  "dataRilascio": "2021-11-15",
+                  "dataScadenza": "2021-11-15",
+                  "questuraRilascioSoggiorno": "24123",
+                  "comune": {
+                    "nomeComune": "24123",
+                    "codiceIstat": "24123",
+                    "siglaProvinciaIstat": "24123",
+                    "descrizioneLocalita": "24123"
+                  },
+                  "numeroPassaporto": "24123"
+                },
+                "listaElettorale": {
+                  "elettore": "24123",
+                  "comune": {
+                    "nomeComune": "24123",
+                    "codiceIstat": "24123",
+                    "siglaProvinciaIstat": "24123",
+                    "descrizioneLocalita": "24123"
+                  }
+                },
+                "listaLeva": {
+                  "iscritto": "24123",
+                  "comune": {
+                    "nomeComune": "24123",
+                    "codiceIstat": "24123",
+                    "siglaProvinciaIstat": "24123",
+                    "descrizioneLocalita": "24123"
+                  }
+                },
+                "censimento": {
+                  "annoCensimento": "24123",
+                  "sezioneCensimento": "24123",
+                  "foglioCensimento": "24123",
+                  "dataRegolarizzazione": "2021-11-15",
+                  "motivoCompilazione": "24123"
+                },
+                "legameSoggetto": {
+                  "tipoLegame": "24123",
+                  "dataDecorrenza": "2021-11-15",
+                  "codiceLegame": "24123",
+                  "progressivoComponente": "24123",
+                  "dataDecorrenzaLegame": "2021-11-15"
+                },
+                "famigliaConvivenza": {
+                  "idFamigliaConvivenzaComune": {
+                    "idFamigliaConvivenzaComuneIstat": "24123",
+                    "idFamigliaConvivenza": "24123"
+                  },
+                  "idFamigliaConvivenzaANPR": "24123",
+                  "famigliaAire": "24123",
+                  "dataOrigineFamigliaConvivenza": "2021-11-15",
+                  "motivoCostituzione": "24123",
+                  "denominazioneConvivenza": "24123",
+                  "specieConvivenza": "24123",
+                  "tipoMovimentazione": "24123",
+                  "presenzaFamigliaCoabitante": "24123",
+                  "tipoScheda": "24123"
+                },
+                "altriDati": {
+                  "posizioneProfessionale": "24123",
+                  "condizioneNonProfessionale": "24123",
+                  "titoloStudio": "24123"
+                },
+                "autoveicoli": {
+                  "possessoAutoveicoli": "24123",
+                  "possessoPatente": "24123"
+                },
+                "domicilioDigitale": {
+                  "indirizzoDigitale": "24123",
+                  "dataInizioValidita": "2021-11-15",
+                  "enteErogatore": "24123"
+                },
+                "datiIscrizione": {
+                  "datiIscrizioneComune": {
+                    "dataIscrizione": "2021-11-15",
+                    "protocolloComune": "24123",
+                    "comune": {
+                      "nomeComune": "24123",
+                      "codiceIstat": "24123",
+                      "siglaProvinciaIstat": "24123",
+                      "descrizioneLocalita": "24123"
+                    },
+                    "idOperazioneComune": "24123",
+                    "idOperazioneANPR": "24123",
+                    "dataDefinizionePratica": "2021-11-15"
+                  },
+                  "iscrizioneResidente": {
+                    "motivoIscrizione": "24123",
+                    "descrizioneMotivoIscrizione": "24123"
+                  },
+                  "tipoIscrizioneAIRE": {
+                    "motivoIscrizione": "24123",
+                    "noteMotivoIscrizione": "24123",
+                    "iniziativaIscrizione": "24123",
+                    "noteIniziativaIscrizione": "24123",
+                    "individuazioneComuneIscrizione": "24123",
+                    "noteIndividuazioneComuneIscrizione": "24123",
+                    "dataArrivoConsolato": "2021-11-15"
+                  },
+                  "sentenza": {
+                    "data": "2021-11-15",
+                    "numero": "24123",
+                    "tipoTribunale": "24123",
+                    "autorita": "24123",
+                    "dataValidita": "2021-11-15"
+                  }
+                },
+                "datiCancellazione": {
+                  "motivoCancellazione": "24123",
+                  "notecancellazione": "24123",
+                  "dataDecorrenzaCancellazione": "2021-11-15",
+                  "datiSentenza": {
+                    "data": "2021-11-15",
+                    "numero": "24123",
+                    "tipoTribunale": "24123",
+                    "autorita": "24123",
+                    "dataValidita": "2021-11-15"
+                  }
+                },
+                "datiDecesso": {
+                  "dataEvento": "2021-11-15",
+                  "senzaGiorno": "24123",
+                  "senzaGiornoMese": "24123",
+                  "luogoEvento": {
+                    "luogoEccezionale": "24123",
+                    "comune": {
+                      "nomeComune": "24123",
+                      "codiceIstat": "24123",
+                      "siglaProvinciaIstat": "24123",
+                      "descrizioneLocalita": "24123"
+                    },
+                    "localita": {
+                      "descrizioneLocalita": "24123",
+                      "descrizioneStato": "24123",
+                      "codiceStato": "24123",
+                      "provinciaContea": "24123"
+                    }
+                  },
+                  "attoEvento": {
+                    "comuneRegistrazione": {
+                      "nomeComune": "24123",
+                      "codiceIstat": "24123",
+                      "siglaProvinciaIstat": "24123",
+                      "descrizioneLocalita": "24123"
+                    },
+                    "ufficioMunicipio": "24123",
+                    "anno": "24123",
+                    "parte": "24123",
+                    "serie": "24123",
+                    "numeroAtto": "24123",
+                    "volume": "24123",
+                    "dataFormazioneAtto": "2021-11-15",
+                    "trascritto": "24123"
+                  }
+                },
+                "provenienza": {
+                  "comune": {
+                    "nomeComune": "24123",
+                    "codiceIstat": "24123",
+                    "siglaProvinciaIstat": "24123",
+                    "descrizioneLocalita": "24123"
+                  },
+                  "localita": {
+                    "descrizioneLocalita": "24123",
+                    "descrizioneStato": "24123",
+                    "codiceStato": "24123",
+                    "provinciaContea": "24123"
+                  }
+                },
+                "destinazione": {
+                  "comune": {
+                    "nomeComune": "24123",
+                    "codiceIstat": "24123",
+                    "siglaProvinciaIstat": "RM",
+                    "descrizioneLocalita": "0"
+                  },
+                  "localita": {
+                    "descrizioneLocalita": "0",
+                    "descrizioneStato": "0",
+                    "codiceStato": "24123",
+                    "provinciaContea": "RM"
+                  }
+                },
+                "erroriAnomalie": [
+                  {
+                    "codiceErroreAnomalia": "0",
+                    "tipoErroreAnomalia": "0",
+                    "testoErroreAnomalia": "0",
+                    "oggettoErroreAnomalia": "0",
+                    "campoErroreAnomalia": "0",
+                    "valoreErroreAnomalia": "0"
+                  }
+                ],
+                "infoSoggettoEnte": [
+                  {
+                    "id": "24123",
+                    "chiave": "24123",
+                    "valore": "A",
+                    "valoreTesto": "24123",
+                    "valoreData": "2021-11-15",
+                    "dettaglio": "24123"
+                  }
+                ],
+                "infoDatoCorretto": [
+                  {
+                    "percorso": "24123",
+                    "campo": "24123",
+                    "valoreCorretto": "24123",
+                    "valoreDataCorretto": "2021-11-15",
+                    "dettaglio": "0"
+                  }
+                ],
+                "idSoggettoNazionale": "24123",
+                "tipoIdentificativi": {
+                  "idANPR": "24123"
+                },
+                "infoStoriaIscrizione": [
+                  {
+                    "tipoScheda": "24123",
+                    "dataIscrizione": "2021-11-15",
+                    "dataCancellazione": "2021-11-15",
+                    "comuneCompetente": {
+                      "nomeComune": "nomeComune",
+                      "codiceIstat": "24123",
+                      "siglaProvinciaIstat": "siglaProvinciaIstat",
+                      "descrizioneLocalita": "0"
+                    }
+                  }
+                ]
               }
-            },
-            "soggettoAIRE": "string",
-            "annoEspatrio": "2022",
-            "idSchedaSoggettoComune": {
-              "idSchedaSoggettoComuneIstat": "0231",
-              "idSchedaSoggetto": "23423"
-            },
-            "idSchedaSoggettoANPR": "24525",
-            "note": "0"
+            ]
           },
-          "statoCivile": {
-            "statoCivile": "NUBILE",
-            "noteStatoCivile": "0",
-            "statoCivileND": "NB"
-          },
-          "attributiSoggetto": {
-            "senzaFissaDimora": "0",
-            "soggettoCertificabile": "1"
-          },
-          "attoNascita": {
-            "comuneRegistrazione": {
-              "nomeComune": "RM",
-              "codiceIstat": "2413",
-              "siglaProvinciaIstat": "RM",
-              "descrizioneLocalita": "ROMA"
-            },
-            "ufficioMunicipio": "5",
-            "anno": "2022",
-            "parte": "4",
-            "serie": "23",
-            "numeroAtto": "2524123",
-            "volume": "241",
-            "dataFormazioneAtto": "2022-03-22",
-            "trascritto": "0"
-          },
-          "cittadinanza": [
-            {
-              "descrizioneStato": "ITALIA",
-              "codiceStato": "IT",
-              "noteStato": "0",
-              "dataValidita": "2021-11-15"
-            }
-          ],
-          "paternita": {
-            "generalita": {
-              "codiceFiscale": {
-                "codFiscale": "DSSSRL22C61Z614M",
-                "validitaCF": "1",
-                "dataAttribuzioneValidita": "2021-11-15"
-              },
-              "cognome": "DE SASSO",
-              "senzaCognome": "0",
-              "nome": "ESTRELLA",
-              "senzaNome": "0",
-              "sesso": "F",
-              "dataNascita": "2022-03-22",
-              "senzaGiorno": "0",
-              "senzaGiornoMese": "0",
-              "luogoNascita": {
-                "luogoEccezionale": "0",
-                "comune": {
-                  "nomeComune": "ROMA",
-                  "codiceIstat": "2413",
-                  "siglaProvinciaIstat": "RM",
-                  "descrizioneLocalita": "ROMA"
-                },
-                "localita": {
-                  "descrizioneLocalita": "ROMA",
-                  "descrizioneStato": "ITALIA",
-                  "codiceStato": "3924",
-                  "provinciaContea": "ROMA"
-                }
-              },
-              "soggettoAIRE": "0",
-              "annoEspatrio": "2022",
-              "idSchedaSoggettoComune": {
-                "idSchedaSoggettoComuneIstat": "41131",
-                "idSchedaSoggetto": "2452"
-              },
-              "idSchedaSoggettoANPR": "1341",
-              "note": "0"
-            },
-            "statoCivile": {
-              "statoCivile": "NUBILE",
-              "noteStatoCivile": "0",
-              "statoCivileND": "NB"
-            },
-            "cittadinanza": {
-              "descrizioneStato": "ITALIA",
-              "codiceStato": "IT",
-              "noteStato": "0",
-              "dataValidita": "2021-11-15"
-            },
-            "altriDati": {
-              "posizioneProfessionale": "DISOCCUPATO",
-              "condizioneNonProfessionale": "0",
-              "titoloStudio": "0"
-            }
-          },
-          "maternita": {
-            "generalita": {
-              "codiceFiscale": {
-                "codFiscale": "DSSSRL22C61Z614M",
-                "validitaCF": "1",
-                "dataAttribuzioneValidita": "2021-11-15"
-              },
-              "cognome": "DE SASS0",
-              "senzaCognome": "0",
-              "nome": "GIOVANNA",
-              "senzaNome": "0",
-              "sesso": "F",
-              "dataNascita": "2021-11-15",
-              "senzaGiorno": "0",
-              "senzaGiornoMese": "0",
-              "luogoNascita": {
-                "luogoEccezionale": "0",
-                "comune": {
-                  "nomeComune": "ROMA",
-                  "codiceIstat": "RM",
-                  "siglaProvinciaIstat": "RM",
-                  "descrizioneLocalita": "RM"
-                },
-                "localita": {
-                  "descrizioneLocalita": "RM",
-                  "descrizioneStato": "it",
-                  "codiceStato": "it",
-                  "provinciaContea": "RM"
-                }
-              },
-              "soggettoAIRE": "0",
-              "annoEspatrio": "2022",
-              "idSchedaSoggettoComune": {
-                "idSchedaSoggettoComuneIstat": "RM",
-                "idSchedaSoggetto": "24123"
-              },
-              "idSchedaSoggettoANPR": "24123",
-              "note": "0"
-            },
-            "statoCivile": {
-              "statoCivile": "NUBILE",
-              "noteStatoCivile": "NB",
-              "statoCivileND": "24123"
-            },
-            "cittadinanza": {
-              "descrizioneStato": "IT",
-              "codiceStato": "IT",
-              "noteStato": "0",
-              "dataValidita": "2021-11-15"
-            },
-            "altriDati": {
-              "posizioneProfessionale": "DISOCCUPATO",
-              "condizioneNonProfessionale": "0",
-              "titoloStudio": "0"
-            }
-          },
-          "residenza": [
-            {
-              "tipoIndirizzo": "RESIDENZA",
+          "datiFamigliaConvivenza": {
+            "residenza": {
+              "tipoIndirizzo": "24123",
               "noteIndirizzo": "0",
               "indirizzo": {
-                "cap": "00144",
+                "cap": "24123",
                 "comune": {
-                  "nomeComune": "RM",
-                  "codiceIstat": "IT",
-                  "siglaProvinciaIstat": "RM",
+                  "nomeComune": "nomeComune",
+                  "codiceIstat": "codiceIstat",
+                  "siglaProvinciaIstat": "siglaProvinciaIstat",
                   "descrizioneLocalita": "0"
                 },
                 "frazione": "24123",
                 "toponimo": {
                   "codSpecie": "24123",
-                  "specie": "24123",
-                  "specieFonte": "24123",
+                  "specie": "specie",
+                  "specieFonte": "specieFonte",
                   "codToponimo": "24123",
-                  "denominazioneToponimo": "24123",
-                  "toponimoFonte": "24123"
+                  "denominazioneToponimo": "denominazioneToponimo",
+                  "toponimoFonte": "toponimoFonte"
                 },
                 "numeroCivico": {
                   "codiceCivico": "24123",
@@ -272,13 +1054,13 @@
                 "indirizzoEstero": {
                   "cap": "24123",
                   "localita": {
-                    "descrizioneLocalita": "24123",
-                    "descrizioneStato": "24123",
+                    "descrizioneLocalita": "0",
+                    "descrizioneStato": "0",
                     "codiceStato": "24123",
-                    "provinciaContea": "24123"
+                    "provinciaContea": "provinciaContea"
                   },
                   "toponimo": {
-                    "denominazione": "24123",
+                    "denominazione": "denominazione",
                     "numeroCivico": "24123"
                   }
                 },
@@ -287,676 +1069,26 @@
                   "descrizioneConsolato": "24123"
                 }
               },
-              "presso": "RM",
+              "presso": "24123",
               "dataDecorrenzaResidenza": "2021-11-15"
-            }
-          ],
-          "altraLingua": [
-            {
-              "idLingua": "24123",
-              "noteIndirizzo": "0",
-              "descrizioneLocalita": "RM",
-              "frazione": "24123",
-              "specie": "24123",
-              "denominazioneToponimo": "24123",
-              "presso": "24123"
-            }
-          ],
-          "datiTraslitterati": {
-            "cognomeTranslitterato": "DE SASS0",
-            "nomeTranslitterato": "ESTRELLA",
-            "specieTranslitterata": "24123",
-            "denominazioneToponimoTranslitterato": "24123",
-            "descrizioneLocalitaTranslitterata": "24123",
-            "denominazioneComuneTranslitterato": "24123",
-            "descrizioneStatoResidenzaTranslitterato": "24123",
-            "denominazioneLocEsteraTranslitterata": "24123",
-            "descrizioneConsolatoTranslitterato": "24123",
-            "descrizioneStatoNascitaTranslitterato": "24123",
-            "descrizioneStatoCittadinanzaTranslitterato": "24123"
-          },
-          "tutoreIntestatario": {
-            "generalita": {
-              "codiceFiscale": {
-                "codFiscale": "DSSSRL22C61Z614M",
-                "validitaCF": "1",
-                "dataAttribuzioneValidita": "2021-11-15"
-              },
-              "cognome": "DE SASS0",
-              "senzaCognome": "0",
-              "nome": "ESTRELLA",
-              "senzaNome": "0",
-              "sesso": "F",
-              "dataNascita": "2021-11-15",
-              "senzaGiorno": "0",
-              "senzaGiornoMese": "0",
-              "luogoNascita": {
-                "luogoEccezionale": "0",
-                "comune": {
-                  "nomeComune": "RM",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "IT",
-                  "descrizioneLocalita": "RM"
-                },
-                "localita": {
-                  "descrizioneLocalita": "RM",
-                  "descrizioneStato": "IT",
-                  "codiceStato": "24123",
-                  "provinciaContea": "RM"
-                }
-              },
-              "soggettoAIRE": "0",
-              "annoEspatrio": "2022",
-              "idSchedaSoggettoComune": {
-                "idSchedaSoggettoComuneIstat": "24123",
-                "idSchedaSoggetto": "24123"
-              },
-              "idSchedaSoggettoANPR": "24123",
-              "note": "0"
             },
-            "comuneResidenza": {
-              "nomeComune": "RM",
-              "codiceIstat": "IT",
-              "siglaProvinciaIstat": "RM",
-              "descrizioneLocalita": "RM"
-            },
-            "dataIntestarioConvivenza": "2021-11-15"
-          },
-          "matrimonio": {
-            "coniuge": {
-              "codiceFiscale": {
-                "codFiscale": "DSSSRL22C61Z614M",
-                "validitaCF": "1",
-                "dataAttribuzioneValidita": "2021-11-15"
+            "famigliaConvivenza": {
+              "idFamigliaConvivenzaComune": {
+                "idFamigliaConvivenzaComuneIstat": "24123",
+                "idFamigliaConvivenza": "24123"
               },
-              "cognome": "DE SASS0",
-              "senzaCognome": "0",
-              "nome": "ESTRELLA",
-              "senzaNome": "0",
-              "sesso": "F",
-              "dataNascita": "2021-11-15",
-              "senzaGiorno": "0",
-              "senzaGiornoMese": "0",
-              "luogoNascita": {
-                "luogoEccezionale": "0",
-                "comune": {
-                  "nomeComune": "RM",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "IT",
-                  "descrizioneLocalita": "RM"
-                },
-                "localita": {
-                  "descrizioneLocalita": "RM",
-                  "descrizioneStato": "IT",
-                  "codiceStato": "IT",
-                  "provinciaContea": "RM"
-                }
-              },
-              "soggettoAIRE": "0",
-              "annoEspatrio": "2022",
-              "idSchedaSoggettoComune": {
-                "idSchedaSoggettoComuneIstat": "24123",
-                "idSchedaSoggetto": "24123"
-              },
-              "idSchedaSoggettoANPR": "24123",
-              "note": "0"
-            },
-            "cittadinanza": {
-              "descrizioneStato": "24123",
-              "codiceStato": "24123",
-              "noteStato": "24123",
-              "dataValidita": "2021-11-15"
-            },
-            "datiMatrimonio": {
-              "dataEvento": "2021-11-15",
-              "senzaGiorno": "0",
-              "senzaGiornoMese": "0",
-              "luogoEvento": {
-                "luogoEccezionale": "0",
-                "comune": {
-                  "nomeComune": "RM",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "IT",
-                  "descrizioneLocalita": "RM"
-                },
-                "localita": {
-                  "descrizioneLocalita": "0",
-                  "descrizioneStato": "0",
-                  "codiceStato": "24123",
-                  "provinciaContea": "RM"
-                }
-              },
-              "attoEvento": {
-                "comuneRegistrazione": {
-                  "nomeComune": "RM",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "RM",
-                  "descrizioneLocalita": "0"
-                },
-                "ufficioMunicipio": "24123",
-                "anno": "24123",
-                "parte": "24123",
-                "serie": "24123",
-                "numeroAtto": "24123",
-                "volume": "24123",
-                "dataFormazioneAtto": "2021-11-15",
-                "trascritto": "24123"
-              }
-            },
-            "ordineMatrimonio": "24123"
-          },
-          "vedovanza": {
-            "datiMorteconiuge": {
-              "dataEvento": "2021-11-15",
-              "senzaGiorno": "24123",
-              "senzaGiornoMese": "24123",
-              "luogoEvento": {
-                "luogoEccezionale": "24123",
-                "comune": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "localita": {
-                  "descrizioneLocalita": "24123",
-                  "descrizioneStato": "24123",
-                  "codiceStato": "24123",
-                  "provinciaContea": "24123"
-                }
-              },
-              "attoEvento": {
-                "comuneRegistrazione": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "ufficioMunicipio": "24123",
-                "anno": "24123",
-                "parte": "24123",
-                "serie": "24123",
-                "numeroAtto": "24123",
-                "volume": "24123",
-                "dataFormazioneAtto": "2021-11-15",
-                "trascritto": "24123"
-              }
-            },
-            "ordineMatrimonioPrecedente": "24123"
-          },
-          "annullamentoMatrimonio": {
-            "tipoCessazione": "24123",
-            "sentenza": {
-              "data": "2021-11-15",
-              "numero": "24123",
-              "tipoTribunale": "24123",
-              "autorita": "24123",
-              "dataValidita": "2021-11-15"
-            },
-            "attoAnnullamentoMatrimonio": {
-              "comuneRegistrazione": {
-                "nomeComune": "24123",
-                "codiceIstat": "24123",
-                "siglaProvinciaIstat": "24123",
-                "descrizioneLocalita": "24123"
-              },
-              "ufficioMunicipio": "24123",
-              "anno": "24123",
-              "parte": "24123",
-              "serie": "24123",
-              "numeroAtto": "24123",
-              "volume": "24123",
-              "dataFormazioneAtto": "2021-11-15",
-              "trascritto": "24123"
+              "idFamigliaConvivenzaANPR": "24123",
+              "famigliaAire": "famigliaAire",
+              "dataOrigineFamigliaConvivenza": "2021-11-15",
+              "motivoCostituzione": "motivoCostituzione",
+              "denominazioneConvivenza": "denominazioneConvivenza",
+              "specieConvivenza": "specieConvivenza",
+              "tipoMovimentazione": "tipoMovimentazione",
+              "presenzaFamigliaCoabitante": "presenzaFamigliaCoabitante",
+              "tipoScheda": "tipoScheda"
             }
           },
-          "convivenzaDiFatto": {
-            "convivente": {
-              "codiceFiscale": {
-                "codFiscale": "24123",
-                "validitaCF": "24123",
-                "dataAttribuzioneValidita": "2021-11-15"
-              },
-              "cognome": "24123",
-              "senzaCognome": "24123",
-              "nome": "24123",
-              "senzaNome": "24123",
-              "sesso": "24123",
-              "dataNascita": "2021-11-15",
-              "senzaGiorno": "24123",
-              "senzaGiornoMese": "24123",
-              "luogoNascita": {
-                "luogoEccezionale": "24123",
-                "comune": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "localita": {
-                  "descrizioneLocalita": "24123",
-                  "descrizioneStato": "24123",
-                  "codiceStato": "24123",
-                  "provinciaContea": "24123"
-                }
-              },
-              "soggettoAIRE": "24123",
-              "annoEspatrio": "24123",
-              "idSchedaSoggettoComune": {
-                "idSchedaSoggettoComuneIstat": "24123",
-                "idSchedaSoggetto": "24123"
-              },
-              "idSchedaSoggettoANPR": "24123",
-              "note": "24123"
-            },
-            "cittadinanza": {
-              "descrizioneStato": "24123",
-              "codiceStato": "24123",
-              "noteStato": "24123",
-              "dataValidita": "2021-11-15"
-            },
-            "contrattoStipula": {
-              "data": "2021-11-15",
-              "dataNotifica": "2021-11-15",
-              "dataDocumento": "2021-11-15",
-              "protocollo": "24123",
-              "documento": "24123",
-              "estensione": "24123",
-              "luogoEvento": {
-                "luogoEccezionale": "24123",
-                "comune": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "localita": {
-                  "descrizioneLocalita": "24123",
-                  "descrizioneStato": "24123",
-                  "codiceStato": "24123",
-                  "provinciaContea": "24123"
-                }
-              },
-              "professionista": "24123",
-              "comuneRegistrazione": {
-                "nomeComune": "24123",
-                "codiceIstat": "24123",
-                "siglaProvinciaIstat": "24123",
-                "descrizioneLocalita": "24123"
-              },
-              "stato": "24123"
-            },
-            "contrattoRisoluzione": {
-              "motivoRisoluzione": 0,
-              "contratto": {
-                "data": "2021-11-15",
-                "dataNotifica": "2021-11-15",
-                "dataDocumento": "2021-11-15",
-                "protocollo": "24123",
-                "documento": "24123",
-                "estensione": "24123",
-                "luogoEvento": {
-                  "luogoEccezionale": "24123",
-                  "comune": {
-                    "nomeComune": "24123",
-                    "codiceIstat": "24123",
-                    "siglaProvinciaIstat": "24123",
-                    "descrizioneLocalita": "24123"
-                  },
-                  "localita": {
-                    "descrizioneLocalita": "24123",
-                    "descrizioneStato": "24123",
-                    "codiceStato": "24123",
-                    "provinciaContea": "24123"
-                  }
-                },
-                "professionista": "24123",
-                "comuneRegistrazione": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "stato": "24123"
-              }
-            },
-            "ordineConvivenza": "24123"
-          },
-          "unioneCivile": {
-            "unitoCivilmente": {
-              "codiceFiscale": {
-                "codFiscale": "24123",
-                "validitaCF": "24123",
-                "dataAttribuzioneValidita": "2021-11-15"
-              },
-              "cognome": "24123",
-              "senzaCognome": "24123",
-              "nome": "24123",
-              "senzaNome": "24123",
-              "sesso": "24123",
-              "dataNascita": "2021-11-15",
-              "senzaGiorno": "24123",
-              "senzaGiornoMese": "24123",
-              "luogoNascita": {
-                "luogoEccezionale": "24123",
-                "comune": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "localita": {
-                  "descrizioneLocalita": "24123",
-                  "descrizioneStato": "24123",
-                  "codiceStato": "24123",
-                  "provinciaContea": "24123"
-                }
-              },
-              "soggettoAIRE": "24123",
-              "annoEspatrio": "24123",
-              "idSchedaSoggettoComune": {
-                "idSchedaSoggettoComuneIstat": "24123",
-                "idSchedaSoggetto": "24123"
-              },
-              "idSchedaSoggettoANPR": "24123",
-              "note": "24123"
-            },
-            "attoUnione": {
-              "dataEvento": "2021-11-15",
-              "senzaGiorno": "24123",
-              "senzaGiornoMese": "24123",
-              "luogoEvento": {
-                "luogoEccezionale": "24123",
-                "comune": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "localita": {
-                  "descrizioneLocalita": "24123",
-                  "descrizioneStato": "24123",
-                  "codiceStato": "24123",
-                  "provinciaContea": "24123"
-                }
-              },
-              "attoEvento": {
-                "comuneRegistrazione": {
-                  "nomeComune": "24123",
-                  "codiceIstat": "24123",
-                  "siglaProvinciaIstat": "24123",
-                  "descrizioneLocalita": "24123"
-                },
-                "ufficioMunicipio": "24123",
-                "anno": "24123",
-                "parte": "24123",
-                "serie": "24123",
-                "numeroAtto": "24123",
-                "volume": "24123",
-                "dataFormazioneAtto": "2021-11-15",
-                "trascritto": "24123"
-              }
-            },
-            "scioglimentoUnione": {
-              "motivoScioglimento": "24123",
-              "sentenza": {
-                "data": "2021-11-15",
-                "numero": "24123",
-                "tipoTribunale": "24123",
-                "autorita": "24123",
-                "dataValidita": "2021-11-15"
-              },
-              "datiEvento": {
-                "dataEvento": "2021-11-15",
-                "senzaGiorno": "24123",
-                "senzaGiornoMese": "24123",
-                "luogoEvento": {
-                  "luogoEccezionale": "24123",
-                  "comune": {
-                    "nomeComune": "24123",
-                    "codiceIstat": "24123",
-                    "siglaProvinciaIstat": "24123",
-                    "descrizioneLocalita": "24123"
-                  },
-                  "localita": {
-                    "descrizioneLocalita": "24123",
-                    "descrizioneStato": "24123",
-                    "codiceStato": "24123",
-                    "provinciaContea": "24123"
-                  }
-                },
-                "attoEvento": {
-                  "comuneRegistrazione": {
-                    "nomeComune": "24123",
-                    "codiceIstat": "24123",
-                    "siglaProvinciaIstat": "24123",
-                    "descrizioneLocalita": "24123"
-                  },
-                  "ufficioMunicipio": "24123",
-                  "anno": "24123",
-                  "parte": "24123",
-                  "serie": "24123",
-                  "numeroAtto": "24123",
-                  "volume": "24123",
-                  "dataFormazioneAtto": "2021-11-15",
-                  "trascritto": "24123"
-                }
-              }
-            },
-            "cittadinanza": {
-              "descrizioneStato": "24123",
-              "codiceStato": "24123",
-              "noteStato": "24123",
-              "dataValidita": "2021-11-15"
-            },
-            "ordineUnione": "24123"
-          },
-          "cartaIdentita": {
-            "numero": "24123",
-            "dataRilascio": "2021-11-15",
-            "cartaceaElettronica": "24123",
-            "interdizioneEspatrio": "24123",
-            "comuneRilascio": {
-              "nomeComune": "24123",
-              "codiceIstat": "24123",
-              "siglaProvinciaIstat": "24123",
-              "descrizioneLocalita": "24123"
-            },
-            "consolatoRilascio": {
-              "codiceConsolato": "24123",
-              "descrizioneConsolato": "24123"
-            },
-            "dataScadenza": "2021-11-15",
-            "dataAnnullamento": "2021-11-15"
-          },
-          "permessoSoggiorno": {
-            "numeroSoggiorno": "24123",
-            "tipoSoggiorno": "24123",
-            "noteSoggiorno": "24123",
-            "dataRilascio": "2021-11-15",
-            "dataScadenza": "2021-11-15",
-            "questuraRilascioSoggiorno": "24123",
-            "comune": {
-              "nomeComune": "24123",
-              "codiceIstat": "24123",
-              "siglaProvinciaIstat": "24123",
-              "descrizioneLocalita": "24123"
-            },
-            "numeroPassaporto": "24123"
-          },
-          "listaElettorale": {
-            "elettore": "24123",
-            "comune": {
-              "nomeComune": "24123",
-              "codiceIstat": "24123",
-              "siglaProvinciaIstat": "24123",
-              "descrizioneLocalita": "24123"
-            }
-          },
-          "listaLeva": {
-            "iscritto": "24123",
-            "comune": {
-              "nomeComune": "24123",
-              "codiceIstat": "24123",
-              "siglaProvinciaIstat": "24123",
-              "descrizioneLocalita": "24123"
-            }
-          },
-          "censimento": {
-            "annoCensimento": "24123",
-            "sezioneCensimento": "24123",
-            "foglioCensimento": "24123",
-            "dataRegolarizzazione": "2021-11-15",
-            "motivoCompilazione": "24123"
-          },
-          "legameSoggetto": {
-            "tipoLegame": "24123",
-            "dataDecorrenza": "2021-11-15",
-            "codiceLegame": "24123",
-            "progressivoComponente": "24123",
-            "dataDecorrenzaLegame": "2021-11-15"
-          },
-          "famigliaConvivenza": {
-            "idFamigliaConvivenzaComune": {
-              "idFamigliaConvivenzaComuneIstat": "24123",
-              "idFamigliaConvivenza": "24123"
-            },
-            "idFamigliaConvivenzaANPR": "24123",
-            "famigliaAire": "24123",
-            "dataOrigineFamigliaConvivenza": "2021-11-15",
-            "motivoCostituzione": "24123",
-            "denominazioneConvivenza": "24123",
-            "specieConvivenza": "24123",
-            "tipoMovimentazione": "24123",
-            "presenzaFamigliaCoabitante": "24123",
-            "tipoScheda": "24123"
-          },
-          "altriDati": {
-            "posizioneProfessionale": "24123",
-            "condizioneNonProfessionale": "24123",
-            "titoloStudio": "24123"
-          },
-          "autoveicoli": {
-            "possessoAutoveicoli": "24123",
-            "possessoPatente": "24123"
-          },
-          "domicilioDigitale": {
-            "indirizzoDigitale": "24123",
-            "dataInizioValidita": "2021-11-15",
-            "enteErogatore": "24123"
-          },
-          "datiIscrizione": {
-            "datiIscrizioneComune": {
-              "dataIscrizione": "2021-11-15",
-              "protocolloComune": "24123",
-              "comune": {
-                "nomeComune": "24123",
-                "codiceIstat": "24123",
-                "siglaProvinciaIstat": "24123",
-                "descrizioneLocalita": "24123"
-              },
-              "idOperazioneComune": "24123",
-              "idOperazioneANPR": "24123",
-              "dataDefinizionePratica": "2021-11-15"
-            },
-            "iscrizioneResidente": {
-              "motivoIscrizione": "24123",
-              "descrizioneMotivoIscrizione": "24123"
-            },
-            "tipoIscrizioneAIRE": {
-              "motivoIscrizione": "24123",
-              "noteMotivoIscrizione": "24123",
-              "iniziativaIscrizione": "24123",
-              "noteIniziativaIscrizione": "24123",
-              "individuazioneComuneIscrizione": "24123",
-              "noteIndividuazioneComuneIscrizione": "24123",
-              "dataArrivoConsolato": "2021-11-15"
-            },
-            "sentenza": {
-              "data": "2021-11-15",
-              "numero": "24123",
-              "tipoTribunale": "24123",
-              "autorita": "24123",
-              "dataValidita": "2021-11-15"
-            }
-          },
-          "datiCancellazione": {
-            "motivoCancellazione": "24123",
-            "notecancellazione": "24123",
-            "dataDecorrenzaCancellazione": "2021-11-15",
-            "datiSentenza": {
-              "data": "2021-11-15",
-              "numero": "24123",
-              "tipoTribunale": "24123",
-              "autorita": "24123",
-              "dataValidita": "2021-11-15"
-            }
-          },
-          "datiDecesso": {
-            "dataEvento": "2021-11-15",
-            "senzaGiorno": "24123",
-            "senzaGiornoMese": "24123",
-            "luogoEvento": {
-              "luogoEccezionale": "24123",
-              "comune": {
-                "nomeComune": "24123",
-                "codiceIstat": "24123",
-                "siglaProvinciaIstat": "24123",
-                "descrizioneLocalita": "24123"
-              },
-              "localita": {
-                "descrizioneLocalita": "24123",
-                "descrizioneStato": "24123",
-                "codiceStato": "24123",
-                "provinciaContea": "24123"
-              }
-            },
-            "attoEvento": {
-              "comuneRegistrazione": {
-                "nomeComune": "24123",
-                "codiceIstat": "24123",
-                "siglaProvinciaIstat": "24123",
-                "descrizioneLocalita": "24123"
-              },
-              "ufficioMunicipio": "24123",
-              "anno": "24123",
-              "parte": "24123",
-              "serie": "24123",
-              "numeroAtto": "24123",
-              "volume": "24123",
-              "dataFormazioneAtto": "2021-11-15",
-              "trascritto": "24123"
-            }
-          },
-          "provenienza": {
-            "comune": {
-              "nomeComune": "24123",
-              "codiceIstat": "24123",
-              "siglaProvinciaIstat": "24123",
-              "descrizioneLocalita": "24123"
-            },
-            "localita": {
-              "descrizioneLocalita": "24123",
-              "descrizioneStato": "24123",
-              "codiceStato": "24123",
-              "provinciaContea": "24123"
-            }
-          },
-          "destinazione": {
-            "comune": {
-              "nomeComune": "24123",
-              "codiceIstat": "24123",
-              "siglaProvinciaIstat": "RM",
-              "descrizioneLocalita": "0"
-            },
-            "localita": {
-              "descrizioneLocalita": "0",
-              "descrizioneStato": "0",
-              "codiceStato": "24123",
-              "provinciaContea": "RM"
-            }
-          },
-          "erroriAnomalie": [
+          "listaAnomalie": [
             {
               "codiceErroreAnomalia": "0",
               "tipoErroreAnomalia": "0",
@@ -965,826 +1097,676 @@
               "campoErroreAnomalia": "0",
               "valoreErroreAnomalia": "0"
             }
-          ],
-          "infoSoggettoEnte": [
-            {
-              "id": "24123",
-              "chiave": "24123",
-              "valore": "A",
-              "valoreTesto": "24123",
-              "valoreData": "2021-11-15",
-              "dettaglio": "24123"
-            }
-          ],
-          "infoDatoCorretto": [
-            {
-              "percorso": "24123",
-              "campo": "24123",
-              "valoreCorretto": "24123",
-              "valoreDataCorretto": "2021-11-15",
-              "dettaglio": "0"
-            }
-          ],
-          "idSoggettoNazionale": "24123",
-          "tipoIdentificativi": {
-            "idANPR": "24123"
-          },
-          "infoStoriaIscrizione": [
-            {
-              "tipoScheda": "24123",
-              "dataIscrizione": "2021-11-15",
-              "dataCancellazione": "2021-11-15",
-              "comuneCompetente": {
-                "nomeComune": "nomeComune",
-                "codiceIstat": "24123",
-                "siglaProvinciaIstat": "siglaProvinciaIstat",
-                "descrizioneLocalita": "0"
-              }
-            }
           ]
         }
-      ]
-    },
-    "datiFamigliaConvivenza": {
-      "residenza": {
-        "tipoIndirizzo": "24123",
-        "noteIndirizzo": "0",
-        "indirizzo": {
-          "cap": "24123",
-          "comune": {
-            "nomeComune": "nomeComune",
-            "codiceIstat": "codiceIstat",
-            "siglaProvinciaIstat": "siglaProvinciaIstat",
-            "descrizioneLocalita": "0"
-          },
-          "frazione": "24123",
-          "toponimo": {
-            "codSpecie": "24123",
-            "specie": "specie",
-            "specieFonte": "specieFonte",
-            "codToponimo": "24123",
-            "denominazioneToponimo": "denominazioneToponimo",
-            "toponimoFonte": "toponimoFonte"
-          },
-          "numeroCivico": {
-            "codiceCivico": "24123",
-            "civicoFonte": "24123",
-            "numero": "24123",
-            "metrico": "24123",
-            "progSNC": "24123",
-            "lettera": "24123",
-            "esponente1": "24123",
-            "colore": "24123",
-            "civicoInterno": {
-              "corte": "24123",
-              "scala": "24123",
-              "interno1": "24123",
-              "espInterno1": "24123",
-              "interno2": "24123",
-              "espInterno2": "24123",
-              "scalaEsterna": "24123",
-              "secondario": "24123",
-              "piano": "24123",
-              "nui": "24123",
-              "isolato": "24123"
-            }
-          }
-        },
-        "localitaEstera": {
-          "indirizzoEstero": {
-            "cap": "24123",
-            "localita": {
-              "descrizioneLocalita": "0",
-              "descrizioneStato": "0",
-              "codiceStato": "24123",
-              "provinciaContea": "provinciaContea"
-            },
-            "toponimo": {
-              "denominazione": "denominazione",
-              "numeroCivico": "24123"
-            }
-          },
-          "consolato": {
-            "codiceConsolato": "24123",
-            "descrizioneConsolato": "24123"
-          }
-        },
-        "presso": "24123",
-        "dataDecorrenzaResidenza": "2021-11-15"
-      },
-      "famigliaConvivenza": {
-        "idFamigliaConvivenzaComune": {
-          "idFamigliaConvivenzaComuneIstat": "24123",
-          "idFamigliaConvivenza": "24123"
-        },
-        "idFamigliaConvivenzaANPR": "24123",
-        "famigliaAire": "famigliaAire",
-        "dataOrigineFamigliaConvivenza": "2021-11-15",
-        "motivoCostituzione": "motivoCostituzione",
-        "denominazioneConvivenza": "denominazioneConvivenza",
-        "specieConvivenza": "specieConvivenza",
-        "tipoMovimentazione": "tipoMovimentazione",
-        "presenzaFamigliaCoabitante": "presenzaFamigliaCoabitante",
-        "tipoScheda": "tipoScheda"
       }
-    },
-    "listaAnomalie": [
-      {
-        "codiceErroreAnomalia": "0",
-        "tipoErroreAnomalia": "0",
-        "testoErroreAnomalia": "0",
-        "oggettoErroreAnomalia": "0",
-        "campoErroreAnomalia": "0",
-        "valoreErroreAnomalia": "0"
-      }
-    ]
-  }
-        }
     }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/anpr-service-e002",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "criteriRicerca": {
-                  "codiceFiscale": "BBBBBB22C61Z614M"
-              }
-          }
-      }
   },
-  "httpResponse": {
-      "statusCode": 401,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "listaErrori": [
-                  {
-                      "codiceErroreAnomalia": "EN122",
-                      "testoErroreAnomalia": "Unauthorized",
-                      "tipoErroreAnomalia": "401"
-                  }
-              ],
-              "testataRisposta": {
-                  "codDestinatario": "ANPR02",
-                  "codMittente": "600010",
-                  "dataOraRichiesta": "2022-10-21T10:15:20",
-                  "esitoOperazione": "XXXX",
-                  "idOperazioneANPR": "54472752",
-                  "idOperazioneClient": "3891448664431500",
-                  "operazioneRichiesta": "E002"
-              }
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/anpr-service-e002",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "criteriRicerca": {
-                  "codiceFiscale": "CCCCCC22C61Z614M"
-              }
-          }
-      }
-  },
-  "httpResponse": {
-      "statusCode": 403,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "listaErrori": [
-                  {
-                      "codiceErroreAnomalia": "EN122",
-                      "testoErroreAnomalia": "Forbidden",
-                      "tipoErroreAnomalia": "403"
-                  }
-              ],
-              "testataRisposta": {
-                  "codDestinatario": "ANPR02",
-                  "codMittente": "600010",
-                  "dataOraRichiesta": "2022-10-21T10:15:20",
-                  "esitoOperazione": "XXXX",
-                  "idOperazioneANPR": "54472752",
-                  "idOperazioneClient": "3891448664431500",
-                  "operazioneRichiesta": "E002"
-              }
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/anpr-service-e002",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "criteriRicerca": {
-                  "codiceFiscale": "DDDDDD22C61Z614M"
-              }
-          }
-      }
-  },
-  "httpResponse": {
-      "statusCode": 404,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "listaErrori": [
-                  {
-                      "codiceErroreAnomalia": "EN122",
-                      "testoErroreAnomalia": "Not found",
-                      "tipoErroreAnomalia": "404"
-                  }
-              ],
-              "testataRisposta": {
-                  "codDestinatario": "ANPR02",
-                  "codMittente": "600010",
-                  "dataOraRichiesta": "2022-10-21T10:15:20",
-                  "esitoOperazione": "XXXX",
-                  "idOperazioneANPR": "54472752",
-                  "idOperazioneClient": "3891448664431500",
-                  "operazioneRichiesta": "E002"
-              }
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/anpr-service-e002",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "criteriRicerca": {
-                  "codiceFiscale": "EEEEEE22C61Z614M"
-              }
-          }
-      }
-  },
-  "httpResponse": {
-      "statusCode": 500,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "listaErrori": [
-                  {
-                      "codiceErroreAnomalia": "EN122",
-                      "testoErroreAnomalia": "Internal server error",
-                      "tipoErroreAnomalia": "500"
-                  }
-              ],
-              "testataRisposta": {
-                  "codDestinatario": "ANPR02",
-                  "codMittente": "600010",
-                  "dataOraRichiesta": "2022-10-21T10:15:20",
-                  "esitoOperazione": "XXXX",
-                  "idOperazioneANPR": "54472752",
-                  "idOperazioneClient": "3891448664431500",
-                  "operazioneRichiesta": "E002"
-              }
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/anpr-service-e002",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "criteriRicerca": {
-                  "codiceFiscale": "FFFFFF22C61Z614M"
-              }
-          }
-      }
-  },
-  "httpResponse": {
-      "statusCode": 503,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "listaErrori": [
-                  {
-                      "codiceErroreAnomalia": "EN122",
-                      "testoErroreAnomalia": "Service unavailable",
-                      "tipoErroreAnomalia": "503"
-                  }
-              ],
-              "testataRisposta": {
-                  "codDestinatario": "ANPR02",
-                  "codMittente": "600010",
-                  "dataOraRichiesta": "2022-10-21T10:15:20",
-                  "esitoOperazione": "XXXX",
-                  "idOperazioneANPR": "54472752",
-                  "idOperazioneClient": "3891448664431500",
-                  "operazioneRichiesta": "E002"
-              }
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/anpr-service-e002",
-      "body": {
-          "type": "REGEX",
-          "regex": ".*"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 400,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "listaErrori": [
-                  {
-                      "codiceErroreAnomalia": "EN122",
-                      "testoErroreAnomalia": "Bad request",
-                      "tipoErroreAnomalia": "400"
-                  }
-              ],
-              "testataRisposta": {
-                  "codDestinatario": "ANPR02",
-                  "codMittente": "600010",
-                  "dataOraRichiesta": "2022-10-21T10:15:20",
-                  "esitoOperazione": "XXXX",
-                  "idOperazioneANPR": "54472752",
-                  "idOperazioneClient": "3891448664431500",
-                  "operazioneRichiesta": "E002"
-              }
-          }
-      }
-  }
-},
-{
+  {
     "httpRequest": {
-        "method": "POST",
-        "path": "/nationalregistriesmock/verifica",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "AAAAAA00H00T000Z"
-            },
-            "matchType": "STRICT"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 200,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "AAAAAA00H00T000Z",
-                "valido": true,
-                "messaggio": "Codice fiscale valido"
-            }
-        }
-    }
-},
-{
-  "httpRequest": {
       "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "BBBBBB00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 200,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "BBBBBB00H00T000Z",
-              "valido": true,
-              "messaggio": "Codice fiscale valido, non più utilizzabile in quanto aggiornato in altro codice fiscale"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "CCCCCC00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 200,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "CCCCCC00H00T000Z",
-              "valido": false,
-              "messaggio": "Codice fiscale non utilizzabile in quanto aggiornato in altro codice fiscale"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "DDDDDD00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 200,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "DDDDDD00H00T000Z",
-              "valido": false,
-              "messaggio": "Codice fiscale non valido"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "EEEEEE00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 401,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "detail": "Unauthorized",
-              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
-              "status": 401,
-              "title": "Unauthorized. You have no authorization to access",
-              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "FFFFFF00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 403,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "detail": "Forbidden",
-              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
-              "status": 403,
-              "title": "Forbidden. The access is permanently forbidden",
-              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "GGGGGG00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 404,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "detail": "Not found",
-              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
-              "status": 404,
-              "title": "Not found. The content you were trying to retrieve was not found",
-              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "HHHHHH00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 500,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "detail": "Internal server error",
-              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
-              "status": 500,
-              "title": "Internal server error. There was a fatal error with the server",
-              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "IIIIII00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 503,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "detail": "Service unavailable",
-              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
-              "status": 503,
-              "title": "Service unavailable. The server was not able to handle the request",
-              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/verifica",
-      "body": {
-          "type": "REGEX",
-          "regex": ".*"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 400,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "detail": "Bad request",
-              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
-              "status": 400,
-              "title": "Bad request. Empty, missing or wrong arguments or path",
-              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/extract/.*",
-      "queryStringParameters": {
-          "practicalReference": [
-              "abc123"
-          ]
-      }
-  },
-  "httpResponseTemplate": {
-      "templateType": "VELOCITY",
-      "template": "{ \"statusCode\": 200, \"body\": {codice_fiscale: \"$!request.path.split(\"/\", 0)[2]\", since: \"$!date.iso\", digitalAddress: [
-                  {
-                      digitalAddress: \"example@pec.it\",
-                      practicedProfession: \"Avvocato\",
-                      usageInfo: {
-                          motivazione: \"CESSAZIONE_VOLONTARIA\",
-                          dateEndValidity: \"$!date.iso\"
-                      }
-                  }
-              ]}}"
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/extract/.*",
-      "queryStringParameters": {
-          "practicalReference": [
-              "def123"
-          ]
-      }
-  },
-  "httpResponse": {
-      "statusCode": 401,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "status": "401",
-              "type": "Unauthorized",
-              "detail": "<detail_error>"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/extract/.*",
-      "queryStringParameters": {
-          "practicalReference": [
-              "ghi123"
-          ]
-      }
-  },
-  "httpResponse": {
-      "statusCode": 403,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "status": "403",
-              "type": "Forbidden",
-              "detail": "<detail_error>"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/extract/.*",
-      "queryStringParameters": {
-          "practicalReference": [
-              "jkl123"
-          ]
-      }
-  },
-  "httpResponse": {
-      "statusCode": 404,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "status": "404",
-              "type": "Not found",
-              "detail": "<detail_error>"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/extract/.*",
-      "queryStringParameters": {
-          "practicalReference": [
-              "mno123"
-          ]
-      }
-  },
-  "httpResponse": {
-      "statusCode": 500,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "status": "500",
-              "type": "Internal server error",
-              "detail": "<detail_error>"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/extract/.*",
-      "queryStringParameters": {
-          "practicalReference": [
-              "pqr123"
-          ]
-      }
-  },
-  "httpResponse": {
-      "statusCode": 503,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "status": "503",
-              "type": "Service unavailable",
-              "detail": "<detail_error>"
-          }
-      }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/extract/.*"
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 400, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"400\",
-    error: \"Not Found\",
-    detail:\"<detail_error\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
-      "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
-      "queryStringParameters": {
-        "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
-        ]
-    },
+      "path": "/nationalregistriesmock/anpr-service-e002",
       "body": {
         "type": "JSON",
         "json": {
+          "criteriRicerca": {
+            "codiceFiscale": "BBBBBB22C61Z614M"
+          }
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "listaErrori": [
+            {
+              "codiceErroreAnomalia": "EN122",
+              "testoErroreAnomalia": "Unauthorized",
+              "tipoErroreAnomalia": "401"
+            }
+          ],
+          "testataRisposta": {
+            "codDestinatario": "ANPR02",
+            "codMittente": "600010",
             "dataOraRichiesta": "2022-10-21T10:15:20",
-            "elencoCf": [{
-                  "cf": "BBBBBB00Z00Z000Z"
-             }
-          ] 
-        },
-        "matchType": "STRICT"
+            "esitoOperazione": "XXXX",
+            "idOperazioneANPR": "54472752",
+            "idOperazioneClient": "3891448664431500",
+            "operazioneRichiesta": "E002"
+          }
+        }
+      }
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 200, \"body\": {
-    dataOraEstrazione: \"$date.iso\",
-    identificativoRichiesta: \"123456\"
-    } }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/anpr-service-e002",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "criteriRicerca": {
+            "codiceFiscale": "CCCCCC22C61Z614M"
+          }
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 403,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "listaErrori": [
+            {
+              "codiceErroreAnomalia": "EN122",
+              "testoErroreAnomalia": "Forbidden",
+              "tipoErroreAnomalia": "403"
+            }
+          ],
+          "testataRisposta": {
+            "codDestinatario": "ANPR02",
+            "codMittente": "600010",
+            "dataOraRichiesta": "2022-10-21T10:15:20",
+            "esitoOperazione": "XXXX",
+            "idOperazioneANPR": "54472752",
+            "idOperazioneClient": "3891448664431500",
+            "operazioneRichiesta": "E002"
+          }
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/anpr-service-e002",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "criteriRicerca": {
+            "codiceFiscale": "DDDDDD22C61Z614M"
+          }
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 404,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "listaErrori": [
+            {
+              "codiceErroreAnomalia": "EN122",
+              "testoErroreAnomalia": "Not found",
+              "tipoErroreAnomalia": "404"
+            }
+          ],
+          "testataRisposta": {
+            "codDestinatario": "ANPR02",
+            "codMittente": "600010",
+            "dataOraRichiesta": "2022-10-21T10:15:20",
+            "esitoOperazione": "XXXX",
+            "idOperazioneANPR": "54472752",
+            "idOperazioneClient": "3891448664431500",
+            "operazioneRichiesta": "E002"
+          }
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/anpr-service-e002",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "criteriRicerca": {
+            "codiceFiscale": "EEEEEE22C61Z614M"
+          }
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 500,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "listaErrori": [
+            {
+              "codiceErroreAnomalia": "EN122",
+              "testoErroreAnomalia": "Internal server error",
+              "tipoErroreAnomalia": "500"
+            }
+          ],
+          "testataRisposta": {
+            "codDestinatario": "ANPR02",
+            "codMittente": "600010",
+            "dataOraRichiesta": "2022-10-21T10:15:20",
+            "esitoOperazione": "XXXX",
+            "idOperazioneANPR": "54472752",
+            "idOperazioneClient": "3891448664431500",
+            "operazioneRichiesta": "E002"
+          }
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/anpr-service-e002",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "criteriRicerca": {
+            "codiceFiscale": "FFFFFF22C61Z614M"
+          }
+        }
+      }
+    },
+    "httpResponse": {
+      "statusCode": 503,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "listaErrori": [
+            {
+              "codiceErroreAnomalia": "EN122",
+              "testoErroreAnomalia": "Service unavailable",
+              "tipoErroreAnomalia": "503"
+            }
+          ],
+          "testataRisposta": {
+            "codDestinatario": "ANPR02",
+            "codMittente": "600010",
+            "dataOraRichiesta": "2022-10-21T10:15:20",
+            "esitoOperazione": "XXXX",
+            "idOperazioneANPR": "54472752",
+            "idOperazioneClient": "3891448664431500",
+            "operazioneRichiesta": "E002"
+          }
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/anpr-service-e002",
+      "body": {
+        "type": "REGEX",
+        "regex": ".*"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 400,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "listaErrori": [
+            {
+              "codiceErroreAnomalia": "EN122",
+              "testoErroreAnomalia": "Bad request",
+              "tipoErroreAnomalia": "400"
+            }
+          ],
+          "testataRisposta": {
+            "codDestinatario": "ANPR02",
+            "codMittente": "600010",
+            "dataOraRichiesta": "2022-10-21T10:15:20",
+            "esitoOperazione": "XXXX",
+            "idOperazioneANPR": "54472752",
+            "idOperazioneClient": "3891448664431500",
+            "operazioneRichiesta": "E002"
+          }
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "AAAAAA00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "AAAAAA00H00T000Z",
+          "valido": true,
+          "messaggio": "Codice fiscale valido"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "BBBBBB00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "BBBBBB00H00T000Z",
+          "valido": true,
+          "messaggio": "Codice fiscale valido, non più utilizzabile in quanto aggiornato in altro codice fiscale"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "CCCCCC00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "CCCCCC00H00T000Z",
+          "valido": false,
+          "messaggio": "Codice fiscale non utilizzabile in quanto aggiornato in altro codice fiscale"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "DDDDDD00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "DDDDDD00H00T000Z",
+          "valido": false,
+          "messaggio": "Codice fiscale non valido"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "EEEEEE00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "detail": "Unauthorized",
+          "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+          "status": 401,
+          "title": "Unauthorized. You have no authorization to access",
+          "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "FFFFFF00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 403,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "detail": "Forbidden",
+          "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+          "status": 403,
+          "title": "Forbidden. The access is permanently forbidden",
+          "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "GGGGGG00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 404,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "detail": "Not found",
+          "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+          "status": 404,
+          "title": "Not found. The content you were trying to retrieve was not found",
+          "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "HHHHHH00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 500,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "detail": "Internal server error",
+          "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+          "status": 500,
+          "title": "Internal server error. There was a fatal error with the server",
+          "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "JSON",
+        "json": {
+          "codiceFiscale": "IIIIII00H00T000Z"
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 503,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "detail": "Service unavailable",
+          "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+          "status": 503,
+          "title": "Service unavailable. The server was not able to handle the request",
+          "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/verifica",
+      "body": {
+        "type": "REGEX",
+        "regex": ".*"
+      }
+    },
+    "httpResponse": {
+      "statusCode": 400,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "detail": "Bad request",
+          "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+          "status": 400,
+          "title": "Bad request. Empty, missing or wrong arguments or path",
+          "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/extract/AAAAAA00H00T000Z",
+      "queryStringParameters": {
+        "practicalReference": [
+          "abc123"
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"codice_fiscale\":\"AAAAAA00H00T000Z\",\"since\":\"1992-12-14\",\"digitalAddress\":[{\"digitalAddress\":\"example@pec.it\",\"practicedProfession\":\"Avvocato\",\"usageInfo\":{\"motivazione\":\"CESSAZIONE_VOLONTARIA\",\"dateEndValidity\":\"2099-12-14\"}}]}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/extract/BBBBBB00H00T000Z",
+      "queryStringParameters": {
+        "practicalReference": [
+          "abc123"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 401,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "status": "401",
+          "type": "Unauthorized",
+          "detail": "<detail_error>"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/extract/CCCCCC00H00T000Z",
+      "queryStringParameters": {
+        "practicalReference": [
+          "abc123"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 403,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "status": "403",
+          "type": "Forbidden",
+          "detail": "<detail_error>"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/extract/DDDDDD00H00T000Z",
+      "queryStringParameters": {
+        "practicalReference": [
+          "abc123"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 404,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "status": "404",
+          "type": "Not found",
+          "detail": "<detail_error>"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/extract/EEEEEE00H00T000Z",
+      "queryStringParameters": {
+        "practicalReference": [
+          "abc123"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 500,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "status": "500",
+          "type": "Internal server error",
+          "detail": "<detail_error>"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/extract/FFFFFF00H00T000Z",
+      "queryStringParameters": {
+        "practicalReference": [
+          "abc123"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 503,
+      "body": {
+        "type": "JSON",
+        "json": {
+          "status": "503",
+          "type": "Service unavailable",
+          "detail": "<detail_error>"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/extract/.*"
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{timestamp:\"$date.iso\",status:\"400\",error:\"BadRquest\",detail:\"<detail_error>\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "2022-10-21T10:15:20",
+          "elencoCf": [{
+            "cf": "BBBBBB00Z00Z000Z"
+          }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"identificativoRichiesta\":\"123456\"}}"
+    }
+  },
+  {
+    "httpRequest": {
       "method": "POST",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string",
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
-    },
+      },
       "body": {
-          "type": "JSON",
-          "json": {
-              "dataOraRichiesta": "2022-10-21T10:15:20",
-              "elencoCf": [{
-                      "cf": "BBBBBB00Z00Z000Z"
-                  }
-              ]
-          },
-          "matchType": "STRICT"
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "2022-10-21T10:15:20",
+          "elencoCf": [{
+            "cf": "BBBBBB00Z00Z000Z"
+          }
+          ]
+        },
+        "matchType": "STRICT"
       }
-  },
-  "httpResponse": {
+    },
+    "httpResponse": {
       "statusCode": 401,
       "body": {
         "type": "JSON",
@@ -1793,202 +1775,161 @@
           "httpMessage": "Unauthorized",
           "moreInformation": "Invalid client id or secret."
         }
-    }
-  }
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
-      "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
-      "queryStringParameters": {
-        "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
-        ]
-    },
-      "body": {
-          "type": "JSON",
-          "json": {
-              "dataOraRichiesta": "2022-10-21T10:05:59",
-              "elencoCf": [{
-                      "cf": "CCCCCC00Z00Z000Z"
-                  }
-              ]
-          },
-          "matchType": "STRICT"
       }
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 404, \"body\": {
-    timestamp: \"$date.iso\",
-    status:\"404\",
-    error: \"Bad Request\",
-    path:\"/wspa/auth/token\",
     }
-    }"
-}
-},
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "POST",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
-      "queryStringParameters": {
-        "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
-        ]
-    },
-      "body": {
-          "type": "JSON",
-          "json": {
-              "dataOraRichiesta": "2022-10-21T10:05:59",
-              "elencoCf": [{
-                      "cf": "DDDDDD00Z00Z000Z"
-                  }
-              ]
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 500, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"500\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
-      "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
-      "queryStringParameters": {
-        "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
-        ]
-    },
-      "body": {
-          "type": "JSON",
-          "json": {
-              "dataOraRichiesta": "2022-10-21T10:05:59",
-              "elencoCf": [{
-                      "cf": "EEEEEE00Z00Z000Z"
-                  }
-              ]
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 503, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"503\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
-      "method": "POST",
-      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
-      "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
-        "queryStringParameters": {
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
       },
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 400, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"400\",
-    error: \"Not Found\",
-    path:\"/wspa/auth/token\",
+      "queryStringParameters": {
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "2022-10-21T10:05:59",
+          "elencoCf": [{
+            "cf": "CCCCCC00Z00Z000Z"
+          }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
     }
-    }"
-}
-},
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "2022-10-21T10:05:59",
+          "elencoCf": [{
+            "cf": "DDDDDD00Z00Z000Z"
+          }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "dataOraRichiesta": "2022-10-21T10:05:59",
+          "elencoCf": [{
+            "cf": "EEEEEE00Z00Z000Z"
+          }
+          ]
+        },
+        "matchType": "STRICT"
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/richiestaElencoPec",
+      "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
+      "queryStringParameters": {
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
+    }
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P0",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraDownload\":\"$date.iso\",\"identificativoRichiesta\":\"AAA34DFV7L0P0\",\"elencoPec\":[{\"cf\":\"AAAAAA00Z00Z000Z\",\"pecImpresa\":\"esempio@pec.it\",\"pecProfessionistas\":[{\"pecProfessionista\":\"esempio1@pec.it\"},{\"pecProfessionista\":\"esempio2@pec.it\"}]}]}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 200, \"body\": {
-     dataOraDownload: \"$date.iso\",
-     identificativoRichiesta: \"AAA34DFV7L0P0\",
-     elencoPec: [
-               {
-                   cf: \"AAAAAA00Z00Z000Z\",
-                   pecImpresa: \"esempio@pec.it\",
-                   pecProfessionistas: [
-                       {
-                        pecProfessionista: \"esempio1@pec.it\"
-                       },
-                       {
-                        pecProfessionista: \"esempio2@pec.it\"
-                       }
-                   ]
-               }
-           ]
-    } }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P1",
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
-    }
-  },
-  "httpResponse": {
+      }
+    },
+    "httpResponse": {
       "statusCode": 401,
       "body": {
         "type": "JSON",
@@ -1997,164 +1938,128 @@
           "httpMessage": "Unauthorized",
           "moreInformation": "Invalid client id or secret."
         }
+      }
     }
-  }
-},
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P2",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 404, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"404\",
-    error: \"Bad Request\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P3",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 500, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"500\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAA34DFV7L0P4",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 503, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"503\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/getElencoPec/AAADDD00R567LV",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 400, \"body\": {
-    timestamp: \"$date.iso\",
-    status:\"400\",
-    error: \"Not Found\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "POST",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/AAAAAA00Z00Z000Z",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"cf\":\"AAAAAA00Z00Z000Z\",\"indirizzoLocalizzazione\":{\"comune\":\"Roma\",\"provincia\":\"RM\",\"toponimo\":\"Roma\",\"via\":\"ViadelCorso\",\"nCivico\":\"100\",\"cap\":\"00100\"}}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 200, \"body\": {
-         dataOraEstrazione: \"$date.iso\",
-    	 cf:\"AAAAAA00Z00Z000Z\",
-    	 indirizzoLocalizzazione: {
-    	  comune:\"Roma\",
-    	  provincia:\"RM\",
-    	  toponimo:\"Roma\",
-    	  via:\"Via del Corso\",
-    	  nCivico:\"100\",
-    	  cap:\"00100\"
-    	 }
-     }
-    }"
-    }
-}, 
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "POST",
       "path":"/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/AAAAAA00Z00Z000Z",
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
-    }
-  },
-  "httpResponse": {
+      }
+    },
+    "httpResponse": {
       "statusCode": 401,
       "body": {
         "type": "JSON",
@@ -2163,525 +2068,430 @@
           "httpMessage": "Unauthorized",
           "moreInformation": "Invalid client id or secret."
         }
+      }
     }
-  }
-},
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "POST",
       "path":"/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/CCCCCC00Z00Z000Z",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 404, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"404\",
-    error: \"Bad Request\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "POST",
       "path":"/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/DDDDDD00Z00Z000Z",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 500, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"500\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "POST",
       "path":"/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/EEEEEE00Z00Z000Z",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 503, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"503\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "POST",
       "path":"/nationalregistriesmock/ic/ce/wspa/wspa/rest/sede/.*",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
-    }
+      }
 
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 400, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"400\",
-    error: \"Not Found\",
-    path:\"/wspa/auth/token\",
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template":"{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
     }
-    }"
-}
-}, 
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/PPPLL07VND10PP",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
       }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$date.iso\",\"cfPersona\":\"PPPLL07VND10PP\",\"elencoImpreseRappresentate\":[{\"cfImpresa\":\"AAAAAA00Z00Z000Z\",\"denominazione\":\"abd\"},{\"cfImpresa\":\"AAAAAA00Z00Z000Z\",\"denominazione\":\"abd\"}]}}"
+    }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 200, \"body\": {
-    dataOraEstrazione: \"$date.iso\",
-    cfPersona:\"PPPLL07VND10PP\",
-    elencoImpreseRappresentate: [{
-    cfImpresa:\"AAAAAA00Z00Z000Z\",
-    denominazione:\"abd\"
-    },{
-    cfImpresa:\"AAAAAA00Z00Z000Z\",
-    denominazione:\"abd\"
-    }
-    ]
-    }
-    }"
-}
-}, 
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/CCCCCC00Z00Z000Z",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
       }
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 400, \"body\": {
-    timestamp: \"$date.iso\",
-    status:\"400\",
-    error: \"Not Found\",
-    path:\"/wspa/auth/token\",
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
     }
-    }"
-}
-}, 
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/PPPLL07VND10PP",
       "queryStringParameters": {
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
       }
-  },
-  "httpResponse": {
+    },
+    "httpResponse": {
       "statusCode": 401,
       "body": {
-          "type": "JSON",
-          "json": {
-              "httpCode": "401",
-              "httpMessage": "Unauthorized",
-              "moreInformation": "Invalid client id or secret."
-          }
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
       }
-  }
-}, 
-{
-  "httpRequest": {
+    }
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/DDDDD11Z11Z111Z",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
       }
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 404, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"404\",
-    error: \"Bad Request\",
-    path:\"/wspa/auth/token\",
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
     }
-    }"
-}
-}, 
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/BBBBBB14M98L444P",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
       }
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 500, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"500\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
     }
-    }"
-}
-}, 
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/VVVVVV88A34I000L",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
       }
-  },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 503, \"body\": {
-    timestamp: \"$date.iso\",
-    status: \"503\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
     }
-    }"
-}
-},
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/LLL23ER56OPL7",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
-          "cfImpresa": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ],
-          "client_id": [{
-                  "schema": {
-                      "type": "string"
-                  }
-              }
-          ]
+        "cfImpresa": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ],
+        "client_id": [{
+          "schema": {
+            "type": "string"
+          }
+        }
+        ]
       }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":200,\"body\":{\"dataOraEstrazione\":\"$!date.iso\",\"cfPersona\":\"LLL23ER56OPL7\",\"cfImpresa\":\"cdvfbg\",\"esitoVerifica\":\"VerificaOk\"}}"
+    }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 200, \"body\":{
-        dataOraEstrazione: \"$!date.iso\",
-        cfPersona:\"LLL23ER56OPL7\",
-    cfImpresa:\"cdvfbg\",
-    esitoVerifica:\"Verifica Ok\"
-    }}"
-  } 
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/LLL23ER56OPL7400",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "cfImpresa": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ],
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 400, \"body\": {
-    timestamp: \"$date.iso\",
-    status:\"400\",
-    error: \"Not Found\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-  }
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/LLL23ER56OPL7",
       "queryStringParameters": {
         "cfImpresa": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ],
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
-    }
-  },
-  "httpResponse": {
+      }
+    },
+    "httpResponse": {
       "statusCode": 401,
       "body": {
-          "type": "JSON",
-          "json": {
-            "httpCode": "401",
-            "httpMessage": "Unauthorized",
-            "moreInformation": "Invalid client id or secret."
-          }
+        "type": "JSON",
+        "json": {
+          "httpCode": "401",
+          "httpMessage": "Unauthorized",
+          "moreInformation": "Invalid client id or secret."
+        }
       }
-  }
-},
-{
-  "httpRequest": {
+    }
+  },
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/ASDERT07TY0PL",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "cfImpresa": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ],
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":404,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"404\",\"error\":\"BadRequest\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 404, \"body\": {
-    timestamp: \"$date.iso\",
-    status:\"404\",
-    error: \"Bad Request\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-  }
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/LDA07VNAPQ24L",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "cfImpresa": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ],
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":500,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"500\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 500, \"body\": {
-    timestamp: \"$date.iso\",
-    status:\"500\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "GET",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/legaleRappresentante/ZAZANPL89MRDC71",
       "headers":{
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-        },
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      },
       "queryStringParameters": {
         "cfImpresa": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ],
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":503,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"503\",\"error\":\"InternalServerError\",\"path\":\"/wspa/auth/token\"}}"
     }
   },
-  "httpResponseTemplate": {
-    "templateType": "VELOCITY",
-    "template": "{ \"statusCode\": 503, \"body\": {
-    timestamp: \"$date.iso\",
-    status:\"503\",
-    error: \"Internal Server Error\",
-    path:\"/wspa/auth/token\",
-    }
-    }"
-}
-},
-{
-  "httpRequest": {
+  {
+    "httpRequest": {
       "method": "POST",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/authentication",
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
+          "schema": {
+            "type": "string"
+          }
+        }
         ]
-    },
+      },
       "body": {
         "string":"^([a-zA-Z0-9_=]+)\\.([a-zA-Z0-9_=]+)\\.([a-zA-Z0-9_\-\+\/=]*)",
         "matchType": "STRICT"
-    }
-  },
-  "httpResponse": 
+      }
+    },
+    "httpResponse":
     {
       "statusCode": 200,
       "body": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
       "headers":{"Content-Type":["text/plain;charset=UTF-8"]}
     }
-},
-{
-  "httpRequest": {
+  },
+  {
+    "httpRequest": {
       "method": "POST",
       "path": "/nationalregistriesmock/ic/ce/wspa/wspa/rest/authentication",
       "queryStringParameters": {
         "client_id": [{
-                "schema": {
-                    "type": "string"
-                }
-            }
-        ]
-    }, 
-  },
-  "httpResponseTemplate": {
-      "templateType": "VELOCITY",
-      "template": "{ \"statusCode\": 400, \"body\": {
-      timestamp: \"$date.iso\",
-      status:\"400\",
-      error: \"Not Found\",
-      path:\"/wspa/auth/token\",
+          "schema": {
+            "type": "string"
+          }
         }
-      }"
+        ]
+      }
+    },
+    "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{\"statusCode\":400,\"body\":{\"timestamp\":\"$date.iso\",\"status\":\"400\",\"error\":\"NotFound\",\"path\":\"/wspa/auth/token\"}}"
+    }
   }
-}
 ]
